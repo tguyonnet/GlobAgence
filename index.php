@@ -26,7 +26,7 @@ $actionName=  \Core\Params::post('a',  \Core\Params::get('a','liste')).'Action';
 //
 // Prépare la connexion à la bdd
 //$connection = \Core\Connection::setup('connection','mysql:host='.BDD_HOST.';dbname='.BDD_NAME, BDD_USER, BDD_PASSWORD, array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
-$connection = \Core\Connection::setup('connection','mysql:host=localhost;dbname=m2l_v3', \Core\Config::BDD_USER, \Core\Config::BDD_PASSWORD, array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+$connection = \Core\Connection::setup('connection','mysql:host='.\Core\Config::BDD_HOST.';dbname='.\Core\Config::BDD_NAME, \Core\Config::BDD_USER, \Core\Config::BDD_PASSWORD, array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
 \Core\Object::setConnection($connection);
 
 // On fait appel au controlleur sélectionné avec les paramètres du POST et GET mis dans un seul tableau (array_merge)
