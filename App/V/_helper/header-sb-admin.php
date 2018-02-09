@@ -49,7 +49,7 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ligues">
           <a class="nav-link" href="?c=Ligue&a=liste">
             <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Ligues</span>
+            <span class="nav-link-text">Biens</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Réservations">
