@@ -18,7 +18,7 @@
   <link href="www/sb-admin/css/sb-admin.css" rel="stylesheet">
 </head>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-  <!-- Navigation-->
+  <!-- Navigation  -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <a class="navbar-brand" href="index.html"><?php echo \Core\Config::APPLI_NAME; ?></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +32,20 @@
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Salles">
-          <a class="nav-link" href="?c=Salle&a=liste">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Salles</span>
-          </a>
-        </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Consultants">
+              <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                  <i class="fa fa-fw fa-user-circle-o"></i>
+                  <span class="nav-link-text">Consultants</span>
+              </a>
+              <ul class="sidenav-second-level collapse" id="collapseComponents">
+                  <li>
+                      <a href="navbar.html">Liste</a>
+                  </li>
+                  <li>
+                      <a href="cards.html">Ajouter</a>
+                  </li>
+              </ul>
+          </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ligues">
           <a class="nav-link" href="?c=Ligue&a=liste">
             <i class="fa fa-fw fa-table"></i>
@@ -61,26 +69,6 @@
             </li>
             <li>
               <a href="cards.html">Cards</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Example Pages</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-            <li>
-              <a href="login.html">Login Page</a>
-            </li>
-            <li>
-              <a href="register.html">Registration Page</a>
-            </li>
-            <li>
-              <a href="forgot-password.html">Forgot Password Page</a>
-            </li>
-            <li>
-              <a href="blank.html">Blank Page</a>
             </li>
           </ul>
         </li>

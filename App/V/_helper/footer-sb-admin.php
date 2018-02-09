@@ -7,7 +7,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright © Your Website 2018 - <?php echo \Core\Config::APPLI_VERSION; ?></small>
+          <small>Copyright © GlobAgence 2018 - <?php echo \Core\Config::APPLI_VERSION; ?></small>
         </div>
       </div>
     </footer>
