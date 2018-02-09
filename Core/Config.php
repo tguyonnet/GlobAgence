@@ -10,6 +10,6 @@ class Config{
     const BDD_PASSWORD  = 'pwweb';
 
     // For Application settings
-    const APPLI_NAME    = 'M2L ResaWeb';
+    const APPLI_NAME    = 'GlobAgence';
     const APPLI_VERSION = 'v0';
 }
