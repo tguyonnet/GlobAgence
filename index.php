@@ -16,7 +16,7 @@ function __autoload($class){
         var_dump($fichier);
     }
 }
-
+//oui
 // Chargement du controlleur avec les paramètres du POST et ceux du GET
 $controllerName = '\\App\\C\\'.\Core\Params::post('c',  \Core\Params::get('c','DashBoard')).'Controller';
 //var_dump($controllerName);
