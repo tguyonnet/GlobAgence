@@ -3929,10 +3929,6 @@ tbody.collapse.show {
   display: none;
 }
 
-.tab-content > .active {
-  display: block;
-}
-
 .navbar {
   position: relative;
   display: -webkit-box;
@@ -3948,6 +3944,8 @@ tbody.collapse.show {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
+
+
 
 .navbar > .container,
 .navbar > .container-fluid {
