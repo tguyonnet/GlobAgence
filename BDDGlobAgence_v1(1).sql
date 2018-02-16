@@ -1,0 +1,375 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Feb 16, 2018 at 04:28 PM
+-- Server version: 5.7.20-0ubuntu0.16.04.1
+-- PHP Version: 7.0.22-0ubuntu0.16.04.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `BDDGlobAgence_v1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `AFFECTER`
+--
+
+CREATE TABLE `AFFECTER` (
+  `CODE_UTILISATEUR` char(20) NOT NULL,
+  `CODE_ZONE` int(3) NOT NULL,
+  `CODE_BIEN` int(3) NOT NULL,
+  `DATE` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `BIEN`
+--
+
+CREATE TABLE `BIEN` (
+  `CODE_BIEN` int(3) NOT NULL,
+  `CODE_CHARGE` int(3) NOT NULL,
+  `CODE_EAU` int(3) NOT NULL,
+  `CODE_STATUT` int(3) NOT NULL,
+  `CODE_CHAUFFAGE` int(3) NOT NULL,
+  `CODE_TYPE_BIEN` int(3) NOT NULL,
+  `SUPERFICIE_BIEN` int(3) DEFAULT NULL,
+  `SUPERFICIE_TERRAIN` int(3) DEFAULT NULL,
+  `PRIX_HFAI` decimal(13,2) DEFAULT NULL,
+  `NOMBRE_DE_PIECE` char(2) DEFAULT NULL,
+  `NOMBRE_DE_CHAMBRE` char(1) DEFAULT NULL,
+  `RUE` char(32) DEFAULT NULL,
+  `LIEU_DIT` char(32) DEFAULT NULL,
+  `NUMERO_BATIMENT` int(2) DEFAULT NULL,
+  `NUMERO_APPARTEMENT` int(2) DEFAULT NULL,
+  `CODEPOSTAL` char(5) DEFAULT NULL,
+  `VILLE` char(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `CHARGE`
+--
+
+CREATE TABLE `CHARGE` (
+  `CODE_CHARGE` int(3) NOT NULL,
+  `CHARGES_TRIMESTRIEL` decimal(10,4) DEFAULT NULL,
+  `TAXE_FONCIERE` decimal(10,2) DEFAULT NULL,
+  `TAXE_HABITATION` decimal(10,2) DEFAULT NULL,
+  `ASSAINISSEMENT` char(3) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `CHAUFFAGE`
+--
+
+CREATE TABLE `CHAUFFAGE` (
+  `CODE_CHAUFFAGE` int(3) NOT NULL,
+  `CODE_TYPE_ENERGIE` int(1) NOT NULL,
+  `MODE` char(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `DIAGNOSTIQUE`
+--
+
+CREATE TABLE `DIAGNOSTIQUE` (
+  `CODE_DIAGNOSTIQUE` int(3) NOT NULL,
+  `CODE_BIEN` int(3) NOT NULL,
+  `CODE_TYPE_DIAGNOSTIQUE` int(3) NOT NULL,
+  `DATE_VALIDITE` date DEFAULT NULL,
+  `CHEMIN_DOCUMENT` char(32) DEFAULT NULL,
+  `DIAGNOSTIQUEUR` char(32) DEFAULT NULL,
+  `DPE_CE` int(3) DEFAULT NULL,
+  `DPE_GES` int(3) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `DROIT`
+--
+
+CREATE TABLE `DROIT` (
+  `CODE_DROIT` int(1) NOT NULL,
+  `LIBELLE` char(24) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `EAU_CHAUDE`
+--
+
+CREATE TABLE `EAU_CHAUDE` (
+  `CODE_EAU` int(3) NOT NULL,
+  `CODE_TYPE_ENERGIE` int(1) NOT NULL,
+  `MODE` char(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `PHOTO`
+--
+
+CREATE TABLE `PHOTO` (
+  `CODE_PHOTO` int(4) NOT NULL,
+  `CODE_BIEN` int(3) NOT NULL,
+  `LIBELLE` char(20) DEFAULT NULL,
+  `CHEMIN` char(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `STATUT`
+--
+
+CREATE TABLE `STATUT` (
+  `CODE_STATUT` int(3) NOT NULL,
+  `LIBELLE` char(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `TYPE_BIEN`
+--
+
+CREATE TABLE `TYPE_BIEN` (
+  `CODE_TYPE_BIEN` int(3) NOT NULL,
+  `LIBELLE` char(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `TYPE_DIAGNOSTIQUE`
+--
+
+CREATE TABLE `TYPE_DIAGNOSTIQUE` (
+  `CODE_TYPE_DIAGNOSTIQUE` int(3) NOT NULL,
+  `LIBELLE_DIAGNOSTIQUE` char(32) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `TYPE_ENERGIE`
+--
+
+CREATE TABLE `TYPE_ENERGIE` (
+  `CODE_TYPE_ENERGIE` int(1) NOT NULL,
+  `LIBELLE` char(24) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `UTILISATEUR`
+--
+
+CREATE TABLE `UTILISATEUR` (
+  `CODE_UTILISATEUR` char(20) NOT NULL,
+  `CODE_DROIT` int(1) NOT NULL,
+  `LOGIN` char(20) DEFAULT NULL,
+  `PASSWORD` int(16) DEFAULT NULL,
+  `NOM` char(20) DEFAULT NULL,
+  `PRENOM` char(20) DEFAULT NULL,
+  `DATE_NAISSANCE` date DEFAULT NULL,
+  `EMAIL` char(32) DEFAULT NULL,
+  `TELEPHONE` int(2) DEFAULT NULL,
+  `RUE` char(32) DEFAULT NULL,
+  `VILLE` char(32) DEFAULT NULL,
+  `CODE_POSTAL` int(5) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ZONE`
+--
+
+CREATE TABLE `ZONE` (
+  `CODE_ZONE` int(3) NOT NULL,
+  `LIBELLE` char(20) DEFAULT NULL,
+  `CODE_POSTAL` char(5) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `AFFECTER`
+--
+ALTER TABLE `AFFECTER`
+  ADD PRIMARY KEY (`CODE_UTILISATEUR`,`CODE_ZONE`,`CODE_BIEN`),
+  ADD KEY `I_FK_AFFECTER_UTILISATEUR` (`CODE_UTILISATEUR`),
+  ADD KEY `I_FK_AFFECTER_ZONE` (`CODE_ZONE`),
+  ADD KEY `I_FK_AFFECTER_BIEN` (`CODE_BIEN`);
+
+--
+-- Indexes for table `BIEN`
+--
+ALTER TABLE `BIEN`
+  ADD PRIMARY KEY (`CODE_BIEN`),
+  ADD KEY `I_FK_BIEN_CHARGE` (`CODE_CHARGE`),
+  ADD KEY `I_FK_BIEN_EAU_CHAUDE` (`CODE_EAU`),
+  ADD KEY `I_FK_BIEN_STATUT` (`CODE_STATUT`),
+  ADD KEY `I_FK_BIEN_CHAUFFAGE` (`CODE_CHAUFFAGE`),
+  ADD KEY `I_FK_BIEN_TYPE_BIEN` (`CODE_TYPE_BIEN`);
+
+--
+-- Indexes for table `CHARGE`
+--
+ALTER TABLE `CHARGE`
+  ADD PRIMARY KEY (`CODE_CHARGE`);
+
+--
+-- Indexes for table `CHAUFFAGE`
+--
+ALTER TABLE `CHAUFFAGE`
+  ADD PRIMARY KEY (`CODE_CHAUFFAGE`),
+  ADD KEY `I_FK_CHAUFFAGE_TYPE_ENERGIE` (`CODE_TYPE_ENERGIE`);
+
+--
+-- Indexes for table `DIAGNOSTIQUE`
+--
+ALTER TABLE `DIAGNOSTIQUE`
+  ADD PRIMARY KEY (`CODE_DIAGNOSTIQUE`),
+  ADD KEY `I_FK_DIAGNOSTIQUE_BIEN` (`CODE_BIEN`),
+  ADD KEY `I_FK_DIAGNOSTIQUE_TYPE_DIAGNOSTIQUE` (`CODE_TYPE_DIAGNOSTIQUE`);
+
+--
+-- Indexes for table `DROIT`
+--
+ALTER TABLE `DROIT`
+  ADD PRIMARY KEY (`CODE_DROIT`);
+
+--
+-- Indexes for table `EAU_CHAUDE`
+--
+ALTER TABLE `EAU_CHAUDE`
+  ADD PRIMARY KEY (`CODE_EAU`),
+  ADD KEY `I_FK_EAU_CHAUDE_TYPE_ENERGIE` (`CODE_TYPE_ENERGIE`);
+
+--
+-- Indexes for table `PHOTO`
+--
+ALTER TABLE `PHOTO`
+  ADD PRIMARY KEY (`CODE_PHOTO`),
+  ADD KEY `I_FK_PHOTO_BIEN` (`CODE_BIEN`);
+
+--
+-- Indexes for table `STATUT`
+--
+ALTER TABLE `STATUT`
+  ADD PRIMARY KEY (`CODE_STATUT`);
+
+--
+-- Indexes for table `TYPE_BIEN`
+--
+ALTER TABLE `TYPE_BIEN`
+  ADD PRIMARY KEY (`CODE_TYPE_BIEN`);
+
+--
+-- Indexes for table `TYPE_DIAGNOSTIQUE`
+--
+ALTER TABLE `TYPE_DIAGNOSTIQUE`
+  ADD PRIMARY KEY (`CODE_TYPE_DIAGNOSTIQUE`);
+
+--
+-- Indexes for table `TYPE_ENERGIE`
+--
+ALTER TABLE `TYPE_ENERGIE`
+  ADD PRIMARY KEY (`CODE_TYPE_ENERGIE`);
+
+--
+-- Indexes for table `UTILISATEUR`
+--
+ALTER TABLE `UTILISATEUR`
+  ADD PRIMARY KEY (`CODE_UTILISATEUR`),
+  ADD KEY `I_FK_UTILISATEUR_DROIT` (`CODE_DROIT`);
+
+--
+-- Indexes for table `ZONE`
+--
+ALTER TABLE `ZONE`
+  ADD PRIMARY KEY (`CODE_ZONE`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `AFFECTER`
+--
+ALTER TABLE `AFFECTER`
+  ADD CONSTRAINT `AFFECTER_ibfk_1` FOREIGN KEY (`CODE_UTILISATEUR`) REFERENCES `UTILISATEUR` (`CODE_UTILISATEUR`),
+  ADD CONSTRAINT `AFFECTER_ibfk_2` FOREIGN KEY (`CODE_ZONE`) REFERENCES `ZONE` (`CODE_ZONE`),
+  ADD CONSTRAINT `AFFECTER_ibfk_3` FOREIGN KEY (`CODE_BIEN`) REFERENCES `BIEN` (`CODE_BIEN`);
+
+--
+-- Constraints for table `BIEN`
+--
+ALTER TABLE `BIEN`
+  ADD CONSTRAINT `BIEN_ibfk_1` FOREIGN KEY (`CODE_CHARGE`) REFERENCES `CHARGE` (`CODE_CHARGE`),
+  ADD CONSTRAINT `BIEN_ibfk_2` FOREIGN KEY (`CODE_EAU`) REFERENCES `EAU_CHAUDE` (`CODE_EAU`),
+  ADD CONSTRAINT `BIEN_ibfk_3` FOREIGN KEY (`CODE_STATUT`) REFERENCES `STATUT` (`CODE_STATUT`),
+  ADD CONSTRAINT `BIEN_ibfk_4` FOREIGN KEY (`CODE_CHAUFFAGE`) REFERENCES `CHAUFFAGE` (`CODE_CHAUFFAGE`),
+  ADD CONSTRAINT `BIEN_ibfk_5` FOREIGN KEY (`CODE_TYPE_BIEN`) REFERENCES `TYPE_BIEN` (`CODE_TYPE_BIEN`);
+
+--
+-- Constraints for table `CHAUFFAGE`
+--
+ALTER TABLE `CHAUFFAGE`
+  ADD CONSTRAINT `CHAUFFAGE_ibfk_1` FOREIGN KEY (`CODE_TYPE_ENERGIE`) REFERENCES `TYPE_ENERGIE` (`CODE_TYPE_ENERGIE`);
+
+--
+-- Constraints for table `DIAGNOSTIQUE`
+--
+ALTER TABLE `DIAGNOSTIQUE`
+  ADD CONSTRAINT `DIAGNOSTIQUE_ibfk_1` FOREIGN KEY (`CODE_BIEN`) REFERENCES `BIEN` (`CODE_BIEN`),
+  ADD CONSTRAINT `DIAGNOSTIQUE_ibfk_2` FOREIGN KEY (`CODE_TYPE_DIAGNOSTIQUE`) REFERENCES `TYPE_DIAGNOSTIQUE` (`CODE_TYPE_DIAGNOSTIQUE`);
+
+--
+-- Constraints for table `EAU_CHAUDE`
+--
+ALTER TABLE `EAU_CHAUDE`
+  ADD CONSTRAINT `EAU_CHAUDE_ibfk_1` FOREIGN KEY (`CODE_TYPE_ENERGIE`) REFERENCES `TYPE_ENERGIE` (`CODE_TYPE_ENERGIE`);
+
+--
+-- Constraints for table `PHOTO`
+--
+ALTER TABLE `PHOTO`
+  ADD CONSTRAINT `PHOTO_ibfk_1` FOREIGN KEY (`CODE_BIEN`) REFERENCES `BIEN` (`CODE_BIEN`);
+
+--
+-- Constraints for table `UTILISATEUR`
+--
+ALTER TABLE `UTILISATEUR`
+  ADD CONSTRAINT `UTILISATEUR_ibfk_1` FOREIGN KEY (`CODE_DROIT`) REFERENCES `DROIT` (`CODE_DROIT`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
