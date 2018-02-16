@@ -16,7 +16,7 @@ foreach($this->reservations as $reservation){
     echo '<td>',$reservation->getHeureFin(),'</td>';
     echo '<td>',$reservation->getSalle()->getLibelle(),'</td>';
     echo '<td>',$reservation->getLigue()->getLibelle(),'</td>';
-    echo '<td>',  App\V\_helper\ReservationHelper::lienModification($reservation, 'Modifier'),' - ';
+    echo '<td>',  App\V\_helper\ReservationHelper::lienModification($reservation, 'Modifier'), '  ';
     echo App\V\_helper\ReservationHelper::lienSuppression($reservation, 'Supprimer'),'</td>';
     echo '</tr>';
 }

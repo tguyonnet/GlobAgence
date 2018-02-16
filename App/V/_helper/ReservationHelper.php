@@ -11,10 +11,10 @@ class ReservationHelper{
         return $html;
     }    
     static function lienModification(\App\M\ReservationModel $reservation,$texte='Modifier'){
-        return '<a href="?c=Reservation&a=form&reservation_id='.$reservation->getId().'"><i class="fa fa-pencil" aria-hidden="true"></i> '.$texte.'</a>';
+        return '<a class="btn btn-warning" href="?c=Reservation&a=form&reservation_id='.$reservation->getId().'"><i class="fa fa-pencil"></i></a>';
     }
     static function lienSuppression(\App\M\ReservationModel $reservation,$texte='Supprimer'){
-        return '<a href="?c=Reservation&a=suppression&reservation_id='.$reservation->getId().'"><i class="fa fa-trash" aria-hidden="true"></i> '.$texte.'</a>';
+        return '<a class="btn btn-danger" href="?c=Reservation&a=suppression&reservation_id='.$reservation->getId().'"><i class="fa fa-trash"></i></a>';
     }
     static public function form(\App\M\ReservationModel $reservation){
         $form=new \Core\Form();
