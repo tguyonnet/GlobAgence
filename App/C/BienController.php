@@ -12,7 +12,7 @@ use App\M\BienModel;
 
 class BienController extends \Core\Controller {
 
-    static public function listeAction() {
+    static public function formAction() {
         self::$_view->biens = BienModel::getAll();
         self::$_view->title = 'Formulaire des Biens';
     }
