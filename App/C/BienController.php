@@ -1,21 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: usersio
- * Date: 23/02/18
- * Time: 15:07
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 
 namespace App\C;
 
+use App\M\BienModel;
 
-class BienController
-{
-    /**
-     * Description of l
-     *
-     * @author usersio
-     */
+class BienController extends \Core\Controller {
 
-
+    static public function listeAction() {
+        self::$_view->bien = BienModel::getAll();
+        self::$_view->title = 'Formulaire des Biens';
+    }
 }
