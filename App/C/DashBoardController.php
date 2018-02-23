@@ -22,5 +22,11 @@ class DashBoardController extends \Core\Controller {
         self::$_view->salles = new \ArrayObject(SalleModel::getAll()); // Renvoie un tableau indexé d'objets de la classe SalleModel, transformé en ArrayObject utile pour la suite
         self::$_view->ligues = new \ArrayObject(LigueModel::getAll());
         self::$_view->title = 'Tableau de bord';
-    }    
+    }
+
+    static public function loginAction() {
+
+        self::$_view->title = 'Connexion';
+
+    }
 }
