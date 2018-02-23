@@ -9,7 +9,7 @@
 namespace App\C;
 
 
-class Biens
+class BienController
 {
     /**
      * Description of DashBoardController

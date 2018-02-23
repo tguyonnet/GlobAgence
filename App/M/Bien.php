@@ -9,7 +9,7 @@
 namespace App\M;
 
 
-class Biens
+class Bien
 {
 
 }
