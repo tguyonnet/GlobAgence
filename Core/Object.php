@@ -6,7 +6,6 @@
 
 namespace Core;
 
-use Connection;
 
 /**
  * class to convert table row to object
