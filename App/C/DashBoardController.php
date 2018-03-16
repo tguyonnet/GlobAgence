@@ -28,5 +28,6 @@ class DashBoardController extends \Core\Controller {
 
         self::$_view->title = 'Connexion';
 
+
     }
 }
