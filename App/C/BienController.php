@@ -16,4 +16,10 @@ class BienController extends \Core\Controller {
         self::$_view->biens = BienModel::getAll();
         self::$_view->title = 'Formulaire des Biens';
     }
+
+    static public function listeAction() {
+        self::$_view->listes = BienModel::getAll();
+        self::$_view->title = 'Liste des Biens';
+    }
+
 }
