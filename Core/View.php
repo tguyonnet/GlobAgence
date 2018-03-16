@@ -21,6 +21,7 @@ class View{
         if ($this->_file == 'App/V/DashBoardController/loginAction.php'){
             include('App/V/_helper/header-login.php');
             include($fichier);
+
             include('App/V/_helper/footer-login.php');
         }else{
             include('App/V/_helper/header-sb-admin.php');
