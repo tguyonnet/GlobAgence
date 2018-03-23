@@ -1,34 +1,53 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: usersio
- * Date: 23/02/18
- * Time: 17:18
- */
 
 
-
-
-echo '<!-- Breadcrumbs-->
-      <div class="container">
+echo '<div class="container">
       <div class="card card-login mx-auto mt-5">
-      <div class="card-header text-center text-white bg-dark">Formulaire de Connexion</div>
-      <div class="card-body">
+      <div class="card-header text-center text-white bg-dark">Formulaire d\'ajout de bien</div>
+      <div class="card-body" style="text-align: center;">
         <form method="post">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="superficieBien">Superficie du bien :</label>
+            <input type="text" name="superficieBien" 
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+            <label for="superficieTerrain">Superficie du terrain :</label>
+            <input type="text" name="superficieTerrain">
           </div>
-          <div class="form-group text-center">
-          <input class="btn btn-dark" type="submit" value="Se connecter">
-          <a class="btn btn-info" href="register.html">Mot de passe oublié ?</a>
-        </div>
+          <div class="form-group">
+            <label for="prix">Prix :</label>
+           <input type="text" name="prix">
+          </div>
+          <div class="form-group">
+            <label for="image[1]">Photos :</label>
+            <input type="file" name="image" size="10" multiple>
+          </div>
+          <div class="form-group">
+            <label for="nbPiece">Nombre de pièce :</label>
+            <input type="text" name="nbPiece">
+          </div>
+          <div class="form-group">
+            <label for="nbChambre">Nombre de chambre :</label>
+            <input type="text" name="nbChambre">
+          </div>
+          <div class="form-group">
+            <label for="ecoLogement">Eco Logementl :</label>
+            <input type="checkbox" name="ecoLogement">
+          </div>
+          <div class="form-group">
+            <label for="emissionGES">Emission GES :</label>
+            <input type="checkbox" name="emissionGES">
+          </div>
+         <div class="form-group">
+            <label for="valider">Valider :</label>
+            <input type="submit" name="valider">
+          </div>
         </form>
-       
       </div>
       </div>
     </div>';
+$extensions_valides=array('jpg','jpeg','png');
+
+$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
+
+if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
