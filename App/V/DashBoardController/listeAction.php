@@ -2,13 +2,6 @@
 
 // Ici on est dans la classe View, ce morceau de code vient donc s'inclure à l'intérieur de la méthode display() de la classe View
 
-echo '<!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
-        </li>
-        <li class="breadcrumb-item active">'.$this->title.'</li>
-      </ol>';
 
 
 // Une ligne pour contenir les carte de messages
