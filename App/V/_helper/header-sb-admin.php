@@ -35,14 +35,22 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="?c=Consultant&a=liste">Liste</a>
-                      <a class="dropdown-item" href="#">Formulaire</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <!--<div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>-->
                   </div>
               </li>
-              <li class="nav-item active">
-                  <a class="text-white nav-link" href="?c=Bien&a=liste">Biens</a>
+
+              <li class="nav-item dropdown">
+                  <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bien
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="?c=Bien&a=liste">Liste</a>
+                      <a class="dropdown-item" href="?c=Bien&a=form">Formulaire</a>
+
+                  </div>
               </li>
+
 
               <!--<li class="nav-item">
                   <a class="nav-link disabled" href="#">Disabled</a>
