@@ -50,9 +50,7 @@
 
                   </div>
               </li>
-              <li class="nav-item active">
-                  <a class="text-white nav-link" href="?c=Bien&a=liste">Biens</a>
-              </li>
+
 
               <!--<li class="nav-item">
                   <a class="nav-link disabled" href="#">Disabled</a>
