@@ -101,7 +101,7 @@ class BienModel extends Object
     /**
      * @return mixed
      */
-    public function getNuumeroBatiment()
+    public function getNumeroBatiment()
     {
         return $this->nuumero_batiment;
     }
