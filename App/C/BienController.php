@@ -18,7 +18,7 @@ class BienController extends \Core\Controller {
     }
 
     static public function listeAction() {
-        self::$_view->listes = BienModel::getAll();
+        self::$_view->biens = BienModel::getAll();
         self::$_view->title = 'Liste des Biens';
     }
 
