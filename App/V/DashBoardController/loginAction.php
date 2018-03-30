@@ -10,14 +10,14 @@ echo '<!-- Breadcrumbs-->
       <div class="card card-login mx-auto mt-5">
       <div class="card-header text-center text-white bg-dark">Formulaire de Connexion</div>
       <div class="card-body">
-        <form >
+        <form method="post" action="?c=DashBoard&a=login">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <input class="form-control" id="Email" type="email" aria-describedby="emailHelp" placeholder="Enter email">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+            <input class="form-control" id="Password" type="password" placeholder="Password">
           </div>
           <div class="form-group text-center">
           <input class="btn btn-dark" type="submit" value="Se connecter">
@@ -30,15 +30,10 @@ echo '<!-- Breadcrumbs-->
     </div>';
 
 
-$timeTarget = 0.05; // 50 millisecondes
 
-$cost = 8;
-do {
-    $cost++;
-    $start = microtime(true);
-    echo password_hash("pwsio", PASSWORD_BCRYPT, ["cost" => $cost]);
-    $end = microtime(true);
-} while (($end - $start) < $timeTarget);
+
+
+
 
 
 

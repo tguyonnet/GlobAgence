@@ -27,6 +27,11 @@ class DashBoardController extends \Core\Controller {
     static public function loginAction() {
 
         self::$_view->title = 'Connexion';
+        // recuperation des email et password issue de la classe utilisateurModel
+        // verification des données email et password, s'ils appartiennent bien à la classe utilisateurModel
+        // soit il appartient et ok renvoie page d'accueil(c=dashboard et a = liste) , sinon renvoie a la page de connexion ()
+
+
 
     }
 
