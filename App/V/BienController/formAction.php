@@ -101,6 +101,7 @@ $MonFormulaire = function ($Var1='',$Var2='') {
 //formulaire rempli avec, par exemple, le contenu de ta bdd
 echo $MonFormulaire('test','coucou');
 
+
 // formulaire vierge
 echo $MonFormulaire();
 */
