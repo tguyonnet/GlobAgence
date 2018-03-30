@@ -7,6 +7,14 @@ echo '<div class="container">
       <div class="card-body" style="text-align: center;">
         <form method="post">
           <div class="form-group">
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville">
+          </div>  
+          <div class="form-group">
+            <label for="codePostal">Code postal :</label>
+            <input type="text" name="codepostal">
+          </div>
+          <div class="form-group">
             <label for="type">Type du bien :</label>
             <SELECT name="type" size="1">
             <OPTION>Maison avec terrain
@@ -16,6 +24,14 @@ echo '<div class="container">
             <OPTION>Local entreprise
             <OPTION>Parking
             </SELECT>
+          </div>
+          <div class="form-group">
+            <label for="numBatiment">Numéro du batiment(uniquement appartement) :</label>
+            <input type="text" name="numbatiment">
+          </div>
+          <div class="form-group">
+            <label for="numAppartement">Numéro de l\'appartement :</label>
+            <input type="text" name="numappartement">
           </div>
           <div class="form-group">
             <label for="superficieBien">Superficie du bien :</label>
