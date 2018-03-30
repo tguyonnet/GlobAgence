@@ -11,35 +11,82 @@ use Core\Object;
 
 class BienModel extends Object
 {
-    protected static $_table='bien';
+    protected static $_table='BIEN';
 
-    protected $code_bien;
-    protected $superficie_bien;
-    protected $superficie_terrain;
-    protected $prix_hfai;
-    protected $nombre_de_piece;
-    protected $nombre_de_chambre;
-    protected $rue;
-    protected $lieu_dit;
-    protected $nuumero_batiment;
-    protected $numero_appartement;
-    protected $codePostal;
-    protected $ville;
+    protected $id;
+    protected $CODE_BIEN;
+    protected $CODE_CHARGE;
+    protected $CODE_STATUT;
+    protected $CODE_EAU;
+    protected $CODE_CHAUFFAGE;
+    protected $CODE_TYPE_BIEN ;
+    protected $SUPERFICIE_BIEN;
+    protected $SUPERFICIE_TERRAIN;
+    protected $PRIX_HFAI;
+    protected $NOMBRE_DE_PIECE;
+    protected $NOMBRE_DE_CHAMBRE;
+    protected $RUE;
+    protected $LIEU_DIT;
+    protected $NUMERO_BATIMENT;
+    protected $NUMERO_APPARTEMENT;
+    protected $CODEPOSTAL;
+    protected $VILLE;
 
     /**
      * @return string
      */
-    public static function getTable()
+    public function getTable()
     {
-        return self::$_table;
+        return $this->_table;
     }
+
 
     /**
      * @return mixed
      */
     public function getCodeBien()
     {
-        return $this->code_bien;
+        return $this->CODE_BIEN;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCodeCharge()
+    {
+        return $this->CODE_CHARGE;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCodeStatut()
+    {
+        return $this->CODE_STATUT;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCodeEau()
+    {
+        return $this->CODE_EAU;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCodeChauffage()
+    {
+        return $this->CODE_CHAUFFAGE;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCodeTypeBien()
+    {
+        return $this->CODE_TYPE_BIEN;
     }
 
     /**
@@ -47,7 +94,7 @@ class BienModel extends Object
      */
     public function getSuperficieBien()
     {
-        return $this->superficie_bien;
+        return $this->SUPERFICIE_BIEN;
     }
 
     /**
@@ -55,15 +102,15 @@ class BienModel extends Object
      */
     public function getSuperficieTerrain()
     {
-        return $this->superficie_terrain;
+        return $this->SUPERFICIE_TERRAIN;
     }
 
     /**
      * @return mixed
      */
-    public function getPrixHfai()
+    public function getPrixHFAI()
     {
-        return $this->prix_hfai;
+        return $this->PRIX_HFAI;
     }
 
     /**
@@ -71,7 +118,7 @@ class BienModel extends Object
      */
     public function getNombreDePiece()
     {
-        return $this->nombre_de_piece;
+        return $this->NOMBRE_DE_PIECE;
     }
 
     /**
@@ -79,7 +126,7 @@ class BienModel extends Object
      */
     public function getNombreDeChambre()
     {
-        return $this->nombre_de_chambre;
+        return $this->NOMBRE_DE_CHAMBRE;
     }
 
     /**
@@ -87,7 +134,7 @@ class BienModel extends Object
      */
     public function getRue()
     {
-        return $this->rue;
+        return $this->RUE;
     }
 
     /**
@@ -95,7 +142,7 @@ class BienModel extends Object
      */
     public function getLieuDit()
     {
-        return $this->lieu_dit;
+        return $this->LIEU_DIT;
     }
 
     /**
@@ -103,7 +150,7 @@ class BienModel extends Object
      */
     public function getNumeroBatiment()
     {
-        return $this->nuumero_batiment;
+        return $this->NUMERO_BATIMENT;
     }
 
     /**
@@ -111,7 +158,7 @@ class BienModel extends Object
      */
     public function getNumeroAppartement()
     {
-        return $this->numero_appartement;
+        return $this->NUMERO_APPARTEMENT;
     }
 
     /**
@@ -119,7 +166,7 @@ class BienModel extends Object
      */
     public function getCodePostal()
     {
-        return $this->codePostal;
+        return $this->CODEPOSTAL;
     }
 
     /**
@@ -127,7 +174,7 @@ class BienModel extends Object
      */
     public function getVille()
     {
-        return $this->ville;
+        return $this->VILLE;
     }
 
 
