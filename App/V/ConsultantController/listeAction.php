@@ -12,7 +12,7 @@ echo '<div class="card mb-3">
         <div class="card-body">
           <div class="table-responsive">';
 echo '      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">';
-echo '      <thead><tr>Code utilisateur<th></th><th>Nom</th><th>Prenom</th><th>Zone</th><th>Nombre de biens en vente</th><th>Nombre de biens vendus</th><th>Chiffre d\'affaire</th></tr></thead><tboby>';
+echo '      <thead><th>Nom</th><th>Prenom</th><th>Zone</th><th>Nombre de biens en vente</th><th>Nombre de biens vendus</th><th>Chiffre d\'affaire</th></tr></thead><tboby>';
 
 // Contenu du tableau
 foreach($this->consultants as $consultant){
