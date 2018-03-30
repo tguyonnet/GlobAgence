@@ -66,9 +66,15 @@ echo '<div class="container">
             <input type="checkbox" name="emissionGES">
           </div>
          <div class="form-group">
+            <label for="valider">Valider :</label>
             <input type="submit" name="valider">
           </div>
         </form>
       </div>
       </div>
     </div>';
+$extensions_valides=array('jpg','jpeg','png');
+
+$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
+
+if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
