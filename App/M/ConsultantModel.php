@@ -16,6 +16,7 @@ class ConsultantModel extends Object
     protected static $_table = 'UTILISATEUR';
 
     protected $id;
+    protected $consultantId;
     protected $nom;
     protected $prenom;
     protected $zone;
@@ -23,9 +24,19 @@ class ConsultantModel extends Object
     protected $nombreDeBiensVendus;
     protected $chiffreAffaire;
 
-    public function getId()
+    public function getTable()
+    {
+        return $this->_table;
+    }
+
+    public function  getId()
     {
         return $this->id;
+    }
+
+    public function getConsultantId()
+    {
+        return $this->consultantId;
     }
 
     public function getNom()

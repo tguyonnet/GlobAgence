@@ -15,15 +15,15 @@ echo '      <table class="table table-bordered" id="dataTable" width="100%" cell
 echo '      <thead><tr>Code utilisateur<th></th><th>Nom</th><th>Prenom</th><th>Zone</th><th>Nombre de biens en vente</th><th>Nombre de biens vendus</th><th>Chiffre d\'affaire</th></tr></thead><tboby>';
 
 // Contenu du tableau
-foreach($this->ligues as $ligue){
+foreach($this->consultants as $consultant){
     echo '<tr>';
-    echo '<td>',$ligue->getId(),'</td>';
-    echo '<td>',$ligue->getNom(),'</td>';
-    echo '<td>',$ligue->getPrenom(),'</td>';
-    echo '<td>',$ligue->getZone(),'</td>';
-    echo '<td>',$ligue->getNombreDeBiensEnVente(),'</td>';
-    echo '<td>',$ligue->getNombreDeBiensVendus(),'</td>';
-    echo '<td>',$ligue->getChiffreAffaire(),'</td>';
+    echo '<td>',$consultant->getConsultantId(),'</td>';
+    echo '<td>',$consultant->getNom(),'</td>';
+    echo '<td>',$consultant->getPrenom(),'</td>';
+    echo '<td>',$consultant->getZone(),'</td>';
+    echo '<td>',$consultant->getNombreDeBiensEnVente(),'</td>';
+    echo '<td>',$consultant->getNombreDeBiensVendus(),'</td>';
+    echo '<td>',$consultant->getChiffreAffaire(),'</td>';
     echo '</tr>';
 }
 
