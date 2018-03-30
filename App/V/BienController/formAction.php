@@ -7,8 +7,19 @@ echo '<div class="container">
       <div class="card-body" style="text-align: center;">
         <form method="post">
           <div class="form-group">
+            <label for="type">Type du bien :</label>
+            <SELECT name="type" size="1">
+            <OPTION>Maison avec terrain
+            <OPTION>Maison sans terrain
+            <OPTION>Appartement
+            <OPTION>Terrain seul
+            <OPTION>Local entreprise
+            <OPTION>Parking
+            </SELECT>
+          </div>
+          <div class="form-group">
             <label for="superficieBien">Superficie du bien :</label>
-            <input type="text" name="superficieBien" 
+            <input type="text" name="superficieBien">
           </div>
           <div class="form-group">
             <label for="superficieTerrain">Superficie du terrain :</label>
