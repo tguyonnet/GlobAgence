@@ -1,7 +1,8 @@
 <?php
 
 
-echo '<div class="container">
+echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <div class="container">
       <div class="card card-login mx-auto mt-5">
       <div class="card-header text-center text-white bg-dark">Formulaire d\'ajout de bien</div>
       <div class="card-body" style="text-align: center;">
@@ -90,9 +91,9 @@ $extensions_valides=array('jpg','jpeg','png');
 
 $extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
 
-/*if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
-
-$MonFormulaire = function ($Var1='',$Var2='') {
+if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
+//---------------------------------------------------------------------------
+/*$MonFormulaire = function ($Var1='',$Var2='') {
     return '
 <form action="./" method="post">
 <input type="text" name="var1" value="'.$Var1.'" />
@@ -106,5 +107,4 @@ $MonFormulaire = function ($Var1='',$Var2='') {
 echo $MonFormulaire('test','coucou');
 
 // formulaire vierge
-echo $MonFormulaire();
-*/
+echo $MonFormulaire();*/
