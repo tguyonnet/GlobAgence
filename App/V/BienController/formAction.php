@@ -102,6 +102,7 @@ $MonFormulaire = function ($Var1='',$Var2='') {
 echo $MonFormulaire('test','coucou');
 
 
+
 // formulaire vierge
 echo $MonFormulaire();
 */
