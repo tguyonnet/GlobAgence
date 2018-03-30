@@ -1,41 +1,38 @@
 <?php
-
-
-
 // Contenu du tableau
-echo '<div class="container">
-      <div class="card card-login mx-auto mt-5">
-      <div class="card-header"><i class="fa fa-table"></i> '.$this->title.'</div>
-      <div class="card-body" style="text-align: center;">
-          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-          <thead><tr><th>Superficie du bien</th><th>Superficie du terrain</th><th>Nombre de pièces</th><th>Nombre de chambre</th>
-            <th>Rue</th><th>Lieu dit</th><th>Numéro</th><th>Code postal</th><th>Ville</th></tr></thead><tboby>';
+
+echo '<!-- Comtenu du tableau-->
+          <!--div class="container"-->
+          <div class="card card-login mx-auto mt-2">
+          <div class="card-header"><i class="fa fa-table"></i> '.$this->title.'</div>
+          <div class="card-body" style="text-align: center;">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead><tr><th>Code de charge</th><th>Code de statut</th><th>Code d\'eau</th><th>Code de chauffage</th><th>Code de type de bien</th>
+                        <th>Superficie du bien</th><th>Superficie du terrain</th><th>Nombre de pièces</th><th>Nombre de chambre</th><th>Rue</th>
+                        <th>Lieu dit</th><th>Numéro</th><th>Code postal</th><th>Ville</th></tr></thead>';
+
                 foreach($this->biens as $bien){
-                    echo'
-                    <div class="form-group">
-                        <tr>;
-                             <td>,$bien->getSuperficieBien(),</td>;
-                             <td>,$bien->getSuperficieTerrain(),</td>;
-                             <td>,$bien->getNombreDePiece(),</td>;
-                             <td>,$bien->getNombreDeChambre(),</td>;
-                             <td>,$bien->getRue(),</td>;
-                             <td>,$bien->getLieuDit(),</td>;
-                             <td>,$bien->getNumeroAppartement(),</td>;
-                             <td>,$bien->getCodePostal(),</td>;
-                             <td>,$bien->getVille(),</td>;
-                        </tr>;
-                    </div>';
+
+                    echo '<tr>';
+                            echo '<td>',$bien->getCodeCharge(),'</td>';
+                            echo '<td>',$bien->getCodeStatut(),'</td>';
+                            echo '<td>',$bien->getCodeEau(),'</td>';
+                            echo '<td>',$bien->getCodeChauffage(),'</td>';
+                            echo '<td>',$bien->getCodeTypeBien(),'</td>';
+                            echo '<td>',$bien->getSuperficieBien(),'</td>';
+                            echo '<td>',$bien->getSuperficieTerrain(),'</td>';
+                            echo '<td>',$bien->getNombreDePiece(),'</td>';
+                            echo '<td>',$bien->getNombreDeChambre(),'</td>';
+                            echo '<td>',$bien->getRue(),'</td>';
+                            echo '<td>',$bien->getLieuDit(),'</td>';
+                            echo '<td>',$bien->getNumeroAppartement(),'</td>';
+                            echo '<td>',$bien->getCodePostal(),'</td>';
+                            echo '<td>',$bien->getVille(),'</td>';
+                            echo '</tr>';
                 }
-               
-echo' </div>
-       </div>
-       </div>';
-
-
 
 // Fin du tableau et des cadres
-echo '      </tbody>
-            </table>
-            </div>
-            </div>
-     </div>';
+echo '    
+                </table>
+           </div>
+           </div>';
