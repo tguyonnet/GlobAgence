@@ -15,6 +15,10 @@ echo '<div class="container">
             <input type="text" name="codepostal">
           </div>
           <div class="form-group">
+            <label for="rue">Numéro de rue :</label>
+            <input type="text" name="rue">
+          </div>
+          <div class="form-group">
             <label for="type">Type du bien :</label>
             <SELECT name="type" size="1">
             <OPTION>Maison avec terrain
