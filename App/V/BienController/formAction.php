@@ -22,7 +22,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           <div class="form-group">
             <label for="type">Type du bien :</label>
             <SELECT name="type" size="1">
-            <OPTION>Maison avec terrain pwroot
+            <OPTION>Maison avec terrain
             <OPTION>Maison sans terrain
             <OPTION>Appartement
             <OPTION>Terrain seul
@@ -87,11 +87,7 @@ if (isset($_POST['ville']) && isset($_POST['codepostal'])) {
 }
 
 
-$extensions_valides=array('jpg','jpeg','png');
 
-$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
-
-if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
 //---------------------------------------------------------------------------
 /*$MonFormulaire = function ($Var1='',$Var2='') {
     return '
