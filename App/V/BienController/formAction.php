@@ -28,7 +28,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <OPTION>Terrain seul
             <OPTION>Local entreprise
             <OPTION>Parking
-            </SELECT>
+            </SELECT> 
           </div>
           <div class="form-group">
             <label for="numBatiment">Numéro du batiment(uniquement appartement) :</label>
