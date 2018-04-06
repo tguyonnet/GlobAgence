@@ -32,5 +32,6 @@ echo '<!-- Comtenu du tableau-->
                             echo '</tr>';
                 }
 
+
 // Fin du tableau et des cadres
 echo '              </table>';

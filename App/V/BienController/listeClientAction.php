@@ -32,6 +32,7 @@ foreach($this->biens as $bien) {
 
 
 
+
     echo '   </div>
         </div>
         </div>';
