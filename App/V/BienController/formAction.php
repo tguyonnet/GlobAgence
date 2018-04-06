@@ -87,11 +87,11 @@ if (isset($_POST['ville']) && isset($_POST['codepostal'])) {
 }
 
 
-$extensions_valides=array('jpg','jpeg','png');
+//$extensions_valides=array('jpg','jpeg','png');
 
-$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
+//$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
 
-if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
+//if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
 //---------------------------------------------------------------------------
 /*$MonFormulaire = function ($Var1='',$Var2='') {
     return '
