@@ -26,3 +26,4 @@ $login = "$_SESSION[login]";
 
 $req=$db->query("INSERT INTO BIEN (SUPERFICIE_BIEN, SUPERFICIE_TERRAIN, PRIX_HFAI, NOMBRE_DE_PIECE, NUM_APPARTEMENT, NOMBRE_DE_CHAMBRE, VILLE, CODEPOSTAL) 
 VALUES ('$superficieBien','$superficieTerrain','$prixHfai','$nbPiece','$numAppartement','$nombreChambre','$ville','$codepostal')");
+mysql_query($req);
