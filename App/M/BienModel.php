@@ -79,6 +79,7 @@ class BienModel extends Object
         return $this->id;
     }
 
+
     /**
      * @return mixed
      */
