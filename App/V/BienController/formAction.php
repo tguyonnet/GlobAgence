@@ -22,7 +22,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           <div class="form-group">
             <label for="type">Type du bien :</label>
             <SELECT name="type" size="1">
-            <OPTION>Maison avec terrain 
+            <OPTION>Maison avec terrain pwroot
             <OPTION>Maison sans terrain
             <OPTION>Appartement
             <OPTION>Terrain seul
@@ -87,24 +87,10 @@ if (isset($_POST['ville']) && isset($_POST['codepostal'])) {
 }
 
 
-$extensions_valides=array('jpg','jpeg','png');
+//$extensions_valides=array('jpg','jpeg','png');
 
-$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
+//$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
 
-if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
+//if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
 //---------------------------------------------------------------------------
-/*$MonFormulaire = function ($Var1='',$Var2='') {
-    return '
-<form action="./" method="post">
-<input type="text" name="var1" value="'.$Var1.'" />
-<input type="text" name="var2" value="'.$Var2.'" />
-<input type="submit" value="Envoyer" />
-</form>
-';
-};
 
-//formulaire rempli avec, par exemple, le contenu de ta bdd
-echo $MonFormulaire('test','coucou');
-
-// formulaire vierge
-echo $MonFormulaire();*/
