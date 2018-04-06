@@ -26,7 +26,6 @@ class DashBoardController extends \Core\Controller {
     }
 
     static public function loginAction() {
-
         self::$_view->title = 'Connexion';
 
     }

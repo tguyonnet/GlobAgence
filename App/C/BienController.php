@@ -22,4 +22,9 @@ class BienController extends \Core\Controller {
         self::$_view->title = 'Liste des Biens';
     }
 
+    static public function listeClientAction() {
+        self::$_view->biens = BienModel::getAll();
+        self::$_view->title = 'Liste des Biens CLIENTS';
+    }
+
 }

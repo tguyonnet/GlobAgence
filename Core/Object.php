@@ -182,8 +182,8 @@ class Object {
      */
     public static function getAll($order = null) {
         $query = 'select * from `' . self::_getTable() . '`' . self::order($order);
-
-        return self::query($query, []);
+        $resultat = self::query($query, []);
+        return $resultat;
     }
 
     private static function order($order = null) {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Core ;
+namespace Core;
 
 class Config{
     // For database settings
-    const BDD_HOST      = '172.21.4.195';
+    const BDD_HOST      = '192.168.200.154';
     const BDD_NAME      = 'GlobAgence_v1';
-    const BDD_USER      = 'usergrant';
-    const BDD_PASSWORD  = 'pwgrant';
+    const BDD_USER      = 'userweb';
+    const BDD_PASSWORD  = 'pwweb';
 
     // For Application settings
     const APPLI_NAME    = 'GlobAgence';
-    const APPLI_VERSION = 'v1.2 ';
+    const APPLI_VERSION = 'v1';
 }
