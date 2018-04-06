@@ -14,9 +14,9 @@ echo '  <div class="col-xl-3 col-sm-6 mb-3">
               <div class="card-body-icon">
                 <i class="fa fa-fw fa-comments"></i>
               </div>
-              <div class="mr-5">'.$this->salles->count().' salles disponibles à la réservation</div>
+              <div class="mr-5">'.$this->biens->count().' biens en vente</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="/GlobAgence/GlobAgence/?c=Bien&a=liste">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -24,7 +24,7 @@ echo '  <div class="col-xl-3 col-sm-6 mb-3">
             </a>
           </div>
         </div>';
-
+/*
 // Première carte de message
 echo '  <div class="col-xl-3 col-sm-6 mb-3">
           <div class="card text-white bg-success o-hidden h-100">
@@ -42,7 +42,7 @@ echo '  <div class="col-xl-3 col-sm-6 mb-3">
             </a>
           </div>
         </div>';
-
+*/
 // Fin de la ligne
 echo '</div>';
 
