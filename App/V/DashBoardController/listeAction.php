@@ -71,7 +71,8 @@ echo '<div class="card-columns">';
 echo '<!-- Example Social Card-->
             <div class="card mb-3">
               <a href="#">
-                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=610" alt="">
+              <div class="w3-container">
+                <img class="card-img-top img-fluid w-100" src="https://picsum.photos/200/150/?random" alt="">
               </a>
               <div class="card-body">
                 <h6 class="card-title mb-1"><a href="#">David Miller</a></h6>
