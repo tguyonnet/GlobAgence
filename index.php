@@ -18,6 +18,7 @@ function __autoload($class){
 }
 
 
+
 // Chargement du controlleur avec les paramètres du POST et ceux du GET
 $controllerName = '\\App\\C\\'.\Core\Params::post('c',  \Core\Params::get('c','DashBoard')).'Controller';
 
