@@ -13,24 +13,23 @@ class BienModel extends Object
 {
     protected static $_table='BIEN';
 
+    protected $charge_id;
+    protected $chauffage_id;
+    protected $codePostal;
+    protected $eau_id;
     protected $id;
-    protected $CODE_BIEN;
-    protected $CODE_CHARGE;
-    protected $CODE_STATUT;
-    protected $CODE_EAU;
-    protected $CODE_CHAUFFAGE;
-    protected $CODE_TYPE_BIEN ;
-    protected $SUPERFICIE_BIEN;
-    protected $SUPERFICIE_TERRAIN;
-    protected $PRIX_HFAI;
-    protected $NOMBRE_DE_PIECE;
-    protected $NOMBRE_DE_CHAMBRE;
-    protected $RUE;
-    protected $LIEU_DIT;
-    protected $NUMERO_BATIMENT;
-    protected $NUMERO_APPARTEMENT;
-    protected $CODEPOSTAL;
-    protected $VILLE;
+    protected $lieuDit;
+    protected $nombreChambres;
+    protected $nombrePieces;
+    protected $numeroAppartement;
+    protected $numeroBatiment;
+    protected $prixHFAI;
+    protected $rue;
+    protected $statut_id;
+    protected $superficieBien;
+    protected $superficieTerrain;
+    protected $typeBien_id;
+    protected $ville;
 
     /**
      * @return string
@@ -40,125 +39,20 @@ class BienModel extends Object
         return $this->_table;
     }
 
-
     /**
      * @return mixed
      */
-    public function getCodeBien()
+    public function getChargeId()
     {
-        return $this->CODE_BIEN;
+        return $this->charge_id;
     }
 
     /**
      * @return mixed
      */
-    public function getCodeCharge()
+    public function getChauffageId()
     {
-        return $this->CODE_CHARGE;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCodeStatut()
-    {
-        return $this->CODE_STATUT;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCodeEau()
-    {
-        return $this->CODE_EAU;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCodeChauffage()
-    {
-        return $this->CODE_CHAUFFAGE;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCodeTypeBien()
-    {
-        return $this->CODE_TYPE_BIEN;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getSuperficieBien()
-    {
-        return $this->SUPERFICIE_BIEN;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getSuperficieTerrain()
-    {
-        return $this->SUPERFICIE_TERRAIN;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPrixHFAI()
-    {
-        return $this->PRIX_HFAI;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNombreDePiece()
-    {
-        return $this->NOMBRE_DE_PIECE;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNombreDeChambre()
-    {
-        return $this->NOMBRE_DE_CHAMBRE;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getRue()
-    {
-        return $this->RUE;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getLieuDit()
-    {
-        return $this->LIEU_DIT;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNumeroBatiment()
-    {
-        return $this->NUMERO_BATIMENT;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getNumeroAppartement()
-    {
-        return $this->NUMERO_APPARTEMENT;
+        return $this->chauffage_id;
     }
 
     /**
@@ -166,7 +60,111 @@ class BienModel extends Object
      */
     public function getCodePostal()
     {
-        return $this->CODEPOSTAL;
+        return $this->codePostal;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEauId()
+    {
+        return $this->eau_id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLieuDit()
+    {
+        return $this->lieuDit;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombreChambres()
+    {
+        return $this->nombreChambres;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombrePieces()
+    {
+        return $this->nombrePieces;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNumeroAppartement()
+    {
+        return $this->numeroAppartement;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNumeroBatiment()
+    {
+        return $this->numeroBatiment;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrixHFAI()
+    {
+        return $this->prixHFAI;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRue()
+    {
+        return $this->rue;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStatutId()
+    {
+        return $this->statut_id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSuperficieBien()
+    {
+        return $this->superficieBien;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSuperficieTerrain()
+    {
+        return $this->superficieTerrain;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTypeBienId()
+    {
+        return $this->typeBien_id;
     }
 
     /**
@@ -174,11 +172,8 @@ class BienModel extends Object
      */
     public function getVille()
     {
-        return $this->VILLE;
+        return $this->ville;
     }
-
-
-
 
 
 
