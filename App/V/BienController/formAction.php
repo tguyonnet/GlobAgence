@@ -5,7 +5,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <div class="container">
       <div class="card card-login mx-auto mt-5">
       <div class="card-header text-center text-white bg-dark">Formulaire d\'ajout de bien</div>
-      <div class="card-body" style="text-align: center;">
+      <div class="card-body text-center">
         <form method="post">
           <div class="form-group">
             <label for="ville">Ville :</label>
@@ -22,12 +22,12 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           <div class="form-group">
             <label for="type">Type du bien :</label>
             <SELECT name="type" size="1">
-            <OPTION>Maison avec terrain 
+            <OPTION>Maison avec terrain
             <OPTION>Maison sans terrain
             <OPTION>Appartement
             <OPTION>Terrain seul
             <OPTION>Local entreprise
-            <OPTION>Parking
+            <OPTION>Parking 
             </SELECT>
           </div>
           <div class="form-group">
@@ -80,31 +80,9 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     </div>';
 
 
-// on teste la déclaration de nos variables
-if (isset($_POST['ville']) && isset($_POST['codepostal'])) {
-	// on affiche nos résultats
-	echo 'votre ville : '.$_POST['ville'].' code postal : '.$_POST['codepostal'];
-}
 
 
-$extensions_valides=array('jpg','jpeg','png');
 
-$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
 
-if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
 //---------------------------------------------------------------------------
-/*$MonFormulaire = function ($Var1='',$Var2='') {
-    return '
-<form action="./" method="post">
-<input type="text" name="var1" value="'.$Var1.'" />
-<input type="text" name="var2" value="'.$Var2.'" />
-<input type="submit" value="Envoyer" />
-</form>
-';
-};
 
-//formulaire rempli avec, par exemple, le contenu de ta bdd
-echo $MonFormulaire('test','coucou');
-
-// formulaire vierge
-echo $MonFormulaire();*/
