@@ -14,16 +14,16 @@ echo '<!-- Comtenu du tableau-->
                 foreach($this->biens as $bien){
 
                             echo '<tr>';
-                            echo '<td>',$bien->getCodeCharge(),'</td>';
-                            echo '<td>',$bien->getCodeStatut(),'</td>';
-                            echo '<td>',$bien->getCodeEau(),'</td>';
-                            echo '<td>',$bien->getCodeChauffage(),'</td>';
-                            echo '<td>',$bien->getCodeTypeBien(),'</td>';
+                            echo '<td>',$bien->getChargeId(),'</td>';
+                            echo '<td>',$bien->getStatutId(),'</td>';
+                            echo '<td>',$bien->getEauId(),'</td>';
+                            echo '<td>',$bien->getChauffageId(),'</td>';
+                            echo '<td>',$bien->getTypeBienId(),'</td>';
                             echo '<td>',$bien->getSuperficieBien(),'</td>';
                             echo '<td>',$bien->getSuperficieTerrain(),'</td>';
                             echo '<td>',$bien->getPrixHFAI(),'</td>';
-                            echo '<td>',$bien->getNombreDePiece(),'</td>';
-                            echo '<td>',$bien->getNombreDeChambre(),'</td>';
+                            echo '<td>',$bien->getNombrePieces(),'</td>';
+                            echo '<td>',$bien->getNombreChambres(),'</td>';
                             echo '<td>',$bien->getRue(),'</td>';
                             echo '<td>',$bien->getLieuDit(),'</td>';
                             echo '<td>',$bien->getNumeroAppartement(),'</td>';

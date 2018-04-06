@@ -11,7 +11,7 @@ use Core\Object;
 
 class BienModel extends Object
 {
-    protected static $_table='BIEN';
+    protected static $_table='bien';
 
     protected $charge_id;
     protected $chauffage_id;
@@ -22,7 +22,7 @@ class BienModel extends Object
     protected $nombreChambres;
     protected $nombrePieces;
     protected $numeroAppartement;
-    protected $numeroBatiment;
+    protected $numerobatiment;
     protected $prixHFAI;
     protected $rue;
     protected $statut_id;
@@ -116,7 +116,7 @@ class BienModel extends Object
      */
     public function getNumeroBatiment()
     {
-        return $this->numeroBatiment;
+        return $this->numerobatiment;
     }
 
     /**

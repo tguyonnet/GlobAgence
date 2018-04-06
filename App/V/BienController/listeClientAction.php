@@ -17,16 +17,16 @@ foreach($this->biens as $bien) {
             <div class="card-body-icon"></div>';
 
 
-    echo '<div>Code de charge: ', $bien->getCodeCharge(), '</div>';
-    echo '<div>Code de statut: ', $bien->getCodeStatut(), '</div>';
-    echo '<div>Code d\'eau: ', $bien->getCodeEau(), '</div>';
-    echo '<div>Code de chauffage: ', $bien->getCodeChauffage(), '</div>';
-    echo '<div>Code de type de bien: ', $bien->getCodeTypeBien(), '</div>';
+    echo '<div>Code de charge: ', $bien->getChargeId(), '</div>';
+    echo '<div>Code de statut: ', $bien->getStatutId(), '</div>';
+    echo '<div>Code d\'eau: ', $bien->getEauId(), '</div>';
+    echo '<div>Code de chauffage: ', $bien->getChauffageId(), '</div>';
+    echo '<div>Code de type de bien: ', $bien->getTypeBienId(), '</div>';
     echo '<div>Superficie du bien: ', $bien->getSuperficieBien(), '</div>';
     echo '<div>Superficie du terrain: ', $bien->getSuperficieTerrain(), '</div>';
     echo '<div>Prix HFAI: ', $bien->getPrixHFAI(), '</div>';
-    echo '<div>Nombre de pièces: ', $bien->getNombreDePiece(), '</div>';
-    echo '<div>Nombre de chambres: ', $bien->getNombreDeChambre(), '</div>';
+    echo '<div>Nombre de pièces: ', $bien->getNombrePieces(), '</div>';
+    echo '<div>Nombre de chambres: ', $bien->getNombreChambres(), '</div>';
     echo '<div>Numéro de l\'appartement: ', $bien->getNumeroAppartement(), '</div>';
     echo '<div>Adresse: ', $bien->getRue(),' ', $bien->getLieuDit(),' ', $bien->getCodePostal(),' ', $bien->getVille(), '</div>';
 
