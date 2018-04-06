@@ -79,7 +79,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
       </div>
     </div>';
 
-
+//
 // on teste la déclaration de nos variables
 if (isset($_POST['ville']) && isset($_POST['codepostal'])) {
 	// on affiche nos résultats
