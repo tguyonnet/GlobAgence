@@ -10,6 +10,7 @@ namespace App\C;
 
 use App\M\SalleModel;
 use App\M\LigueModel;
+use App\M\UtilisateurModel;
 
 /**
  * Description of DashBoardController
@@ -27,12 +28,29 @@ class DashBoardController extends \Core\Controller {
     static public function loginAction() {
 
         self::$_view->title = 'Connexion';
+
+    }
+
+    static public function verifLoginAction($params) {
+
+        self::$_view->title = 'VerifLogin';
         // recuperation des email et password issue de la classe utilisateurModel
+        $utilisateurs = new \ArrayObject(UtilisateurModel::getAll());
+
+        $options = ['cost' => 12,];
+        $passwordHash = password_hash($params['password'], PASSWORD_BCRYPT, $options);
+
         // verification des données email et password, s'ils appartiennent bien à la classe utilisateurModel
-        // soit il appartient et ok renvoie page d'accueil(c=dashboard et a = liste) , sinon renvoie a la page de connexion ()
+        self::$_view->authentification = False;
+        foreach ($utilisateurs as $utilisateur)
+        {
+            if ($params["email"]== $utilisateur->getEMAIL() and $passwordHash == $utilisateur->getPASSWORD())
+            {
+                self::$_view->authentification = True;
+                $_SESSION["nom"] = $utilisateur->getNOM();
+            }
 
-
-
+        }
     }
 
 }

@@ -12,19 +12,19 @@ use Core\Object;
 
 class UtilisateurModel extends Object
 {
-    protected static $_table='UTILISATEUR';
+    protected static $_table='utilisateur';
 
     protected $id;
-    protected $code_droit;
+    protected $droit_id;
     protected $password;
     protected $nom;
     protected $prenom;
-    protected $date_naissance;
+    protected $dateNaissance;
     protected $email;
     protected $telephone;
     protected $rue;
     protected $ville;
-    protected $code_postal;
+    protected $codePostal;
 
 
 
@@ -49,9 +49,9 @@ class UtilisateurModel extends Object
     /**
      * @return mixed
      */
-    public function getCODE_DROIT()
+    public function getDroit_id()
     {
-        return $this->CODE_DROIT;
+        return $this->droit_id;
     }
 
     /**
@@ -59,7 +59,7 @@ class UtilisateurModel extends Object
      */
     public function getPASSWORD()
     {
-        return $this->PASSWORD;
+        return $this->password;
     }
 
     /**
@@ -67,15 +67,7 @@ class UtilisateurModel extends Object
      */
     public function getNOM()
     {
-        return $this->NOM;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getSubventionRecue()
-    {
-        return $this->subventionRecue;
+        return $this->nom;
     }
 
 
@@ -84,16 +76,16 @@ class UtilisateurModel extends Object
      */
     public function getPRENOM()
     {
-        return $this->PRENOM;
+        return $this->prenom;
     }
 
 
     /**
      * @return mixed
      */
-    public function getDATE_NAISSANCE()
+    public function getDATENAISSANCE()
     {
-        return $this->DATE_NAISSANCE;
+        return $this->dateNaissance;
     }
 
 
@@ -102,7 +94,7 @@ class UtilisateurModel extends Object
      */
     public function getEMAIL()
     {
-        return $this->EMAIL;
+        return $this->email;
     }
 
 
@@ -111,7 +103,7 @@ class UtilisateurModel extends Object
      */
     public function getTELEPHONE()
     {
-        return $this->TELEPHONE;
+        return $this->telephone;
     }
 
 
@@ -120,7 +112,7 @@ class UtilisateurModel extends Object
      */
     public function getRUE()
     {
-        return $this->RUE;
+        return $this->rue;
     }
 
 
@@ -129,7 +121,7 @@ class UtilisateurModel extends Object
      */
     public function getVILLE()
     {
-        return $this->VILLE;
+        return $this->ville;
     }
 
 
@@ -137,9 +129,29 @@ class UtilisateurModel extends Object
     /**
      * @return mixed
      */
-    public function getCODE_POSTAL()
+    public function getCODEPOSTAL()
     {
-        return $this->CODE_POSTAL;
+        return $this->codePostal;
+    }
+
+
+    public function hashPassword()
+    {
+        $password = $_POST['password'];
+        $options = ['cost' => 12,];
+        echo password_hash("$password", PASSWORD_BCRYPT, $options);
+    }
+
+    public function verifyPassword()
+    {
+        $password = $_POST['password'];
+        if (password_verify("$password")) {
+            echo "Le mot de passe est valide !";
+        } else {
+            echo "Le mot de passe est invalide.";
+        }
+        echo $password;
+        var_dump($password);
     }
 
 

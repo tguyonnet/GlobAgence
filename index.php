@@ -2,7 +2,7 @@
 
 // Voir un max d'érreurs à l'écran pour le debug
 error_reporting(E_ALL);
-
+session_start();
 // On se place dans le répertoire racine du projet
 chdir(__DIR__);
 
@@ -27,6 +27,7 @@ $actionName=  \Core\Params::post('a',  \Core\Params::get('a','liste')).'Action';
 // Prépare la connexion à la bdd
 $connection = \Core\Connection::setup('connection','mysql:host='.\Core\Config::BDD_HOST.';dbname='.\Core\Config::BDD_NAME, \Core\Config::BDD_USER, \Core\Config::BDD_PASSWORD, array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
 \Core\Object::setConnection($connection);
+
 
 // On fait appel au controlleur sélectionné avec les paramètres du POST et GET mis dans un seul tableau (array_merge)
 \Core\Controller::redirect($controllerName, $actionName,  array_merge(\Core\Params::post(),\Core\Params::get()));
