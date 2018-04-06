@@ -60,7 +60,7 @@ echo '  <div class="col-xl-3 col-sm-6 mb-3">
             </a>
           </div>
         </div>';
-*/
+*///
 // Fin de la ligne
 echo '</div>';
 
