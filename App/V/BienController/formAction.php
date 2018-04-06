@@ -27,7 +27,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <OPTION>Appartement
             <OPTION>Terrain seul
             <OPTION>Local entreprise
-            <OPTION>Parking
+            <OPTION>Parking 
             </SELECT>
           </div>
           <div class="form-group">
@@ -79,18 +79,10 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
       </div>
     </div>';
 
-//
-// on teste la déclaration de nos variables
-if (isset($_POST['ville']) && isset($_POST['codepostal'])) {
-	// on affiche nos résultats
-	echo 'votre ville : '.$_POST['ville'].' code postal : '.$_POST['codepostal'];
-}
 
 
-//$extensions_valides=array('jpg','jpeg','png');
 
-//$extension_upload=strtolower(substr(strrchr($_FILES['icone']['name'],'.'),1));
 
-//if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
+
 //---------------------------------------------------------------------------
 
