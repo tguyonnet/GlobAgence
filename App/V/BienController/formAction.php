@@ -93,18 +93,4 @@ if (isset($_POST['ville']) && isset($_POST['codepostal'])) {
 
 //if(in_array($extension_upload,$extensions_valides)) echo "Extension correcte";
 //---------------------------------------------------------------------------
-/*$MonFormulaire = function ($Var1='',$Var2='') {
-    return '
-<form action="./" method="post">
-<input type="text" name="var1" value="'.$Var1.'" />
-<input type="text" name="var2" value="'.$Var2.'" />
-<input type="submit" value="Envoyer" />
-</form>
-';
-};
 
-//formulaire rempli avec, par exemple, le contenu de ta bdd
-echo $MonFormulaire('test','coucou');
-
-// formulaire vierge
-echo $MonFormulaire();*/
