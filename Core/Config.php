@@ -4,12 +4,12 @@ namespace Core;
 
 class Config{
     // For database settings
-    const BDD_HOST      = 'localhost';
-    const BDD_NAME      = 'm2l_v6';
-    const BDD_USER      = 'userweb';
-    const BDD_PASSWORD  = 'pwweb';
+    const BDD_HOST      = '172.21.4.195';
+    const BDD_NAME      = 'GlobAgence_v1';
+    const BDD_USER      = 'usergrant';
+    const BDD_PASSWORD  = 'pwgrant';
 
     // For Application settings
     const APPLI_NAME    = 'GlobAgence';
-    const APPLI_VERSION = 'v1';
+    const APPLI_VERSION = 'v1.1';
 }

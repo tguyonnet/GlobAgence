@@ -5,6 +5,7 @@
  * Date: 30/03/18
  * Time: 14:05
  */
+
 function envoyerBien($connexion, $login, $superficieBien, $superficieTerrain, $prixHfai, $nbPiece, $numAppartement, $nombreChambre, $ville, $codepostal){
     if(isset($_POST['VILLE']) && ($_POST['CODEPOSTAL']) && isset($_POST['SUPERFICIE_BIEN']) && isset($_POST['SUPERFICIE_TERRAIN']) && isset($_POST['PRIX_HFAI'])
         /**&& isset['PHOTOS']*/ && isset($_POST['NOMBRE_DE_PIECE']) && isset($_POST['NUM_APPARTEMENT']) && isset($_POST['NOMRE_DE_CHAMBRE'])){
@@ -18,7 +19,7 @@ function envoyerBien($connexion, $login, $superficieBien, $superficieTerrain, $p
             $_POST['CODEPOSTAL']=$codepostal;
     }
 }
-$connexion = mysql_connect('172.21.4.195', 'usergrant', 'pwgrant');
+setup($name,$username,$password,$options=null);
 mysql_select_db('GlobAgence_v1',$connexion) or die("Impossible d'ouvrir la base");
 $login = "$_SESSION[login]";
 
