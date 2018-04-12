@@ -37,7 +37,7 @@ class DashBoardController extends \Core\Controller {
         // recuperation des email et password issue de la classe utilisateurModel
         $utilisateurs = new \ArrayObject(UtilisateurModel::getAll());
 
-        $options = ['cost' => 12,];
+        $options = ['cost' => 12];
         $passwordHash = password_hash($params['password'], PASSWORD_BCRYPT, $options);
 
         // verification des données email et password, s'ils appartiennent bien à la classe utilisateurModel

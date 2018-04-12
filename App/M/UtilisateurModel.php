@@ -133,26 +133,9 @@ class UtilisateurModel extends Object
     {
         return $this->codePostal;
     }
+    
 
 
-    public function hashPassword()
-    {
-        $password = $_POST['password'];
-        $options = ['cost' => 12,];
-        echo password_hash("$password", PASSWORD_BCRYPT, $options);
-    }
-
-    public function verifyPassword()
-    {
-        $password = $_POST['password'];
-        if (password_verify("$password")) {
-            echo "Le mot de passe est valide !";
-        } else {
-            echo "Le mot de passe est invalide.";
-        }
-        echo $password;
-        var_dump($password);
-    }
 
 
 }
