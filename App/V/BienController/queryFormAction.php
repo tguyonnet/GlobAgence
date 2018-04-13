@@ -15,6 +15,7 @@ echo '<div class="table-responsive">
                  echo '<tr><td>';
                  echo bien->getVille();
                  echo '</td></tr>';
+
                  }
                 echo '
                 </tbody>
