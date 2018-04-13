@@ -53,5 +53,5 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
         </form>
       </div>
-      </div>  
+      </div>    
     </div>';
