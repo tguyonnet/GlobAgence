@@ -30,6 +30,7 @@ class UtilisateurModel extends Object
 
 
 
+
     public static function whereConsultant_id()
     {
         return consultant_id;

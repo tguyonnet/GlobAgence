@@ -20,6 +20,7 @@ echo '      <table class="table table-bordered" id="dataTable" width="100%" cell
 
 
 
+
 // Fin du tableau et des cadres
 echo '      </tbody>
             </table>
