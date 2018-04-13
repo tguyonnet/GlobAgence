@@ -25,10 +25,15 @@ class UtilisateurModel extends Object
     protected $rue;
     protected $ville;
     protected $codePostal;
+    protected $consultant_id;
 
 
 
 
+    public static function whereConsultant_id()
+    {
+        return consultant_id;
+    }
 
     /**
      * @return string
@@ -133,7 +138,16 @@ class UtilisateurModel extends Object
     {
         return $this->codePostal;
     }
-    
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getConsultantId()
+    {
+        return $this->consultant_id;
+    }
 
 
 

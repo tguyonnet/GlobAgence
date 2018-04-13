@@ -8,6 +8,9 @@
 echo'<div class="card-header"> '.$this->title.'</div>';
 
 
+echo '<img src="http://external-images.premiere.fr/var/premiere/storage/images/tele/news-tele/les-experts-c-est-vous-fin-de-parcours-pour-stephane-plaza/37431960-1-fre-FR/Les-Experts-c-est-vous-fin-de-parcours-pour-Stephane-Plaza.jpg" class="rounded img-left" alt="TEST">';
+
+
 foreach($this->biens as $bien) {
 
     //Texte a coté de l'image
