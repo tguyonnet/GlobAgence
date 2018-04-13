@@ -8,19 +8,19 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
       <div class="card-body text-center">
         <form method="post" action="?c=Bien&a=queryForm">
           <div class="form-group">
-            <label for="ville">Ville :</label>
-            <input type="text" name="ville">
+            <label for="ville">Ville :</label><br />
+            <input type="text" name="ville" placeholder="Ville">
           </div>  
           <div class="form-group">
-            <label for="codePostal">Code postal :</label>
-            <input type="text" name="codePostal">
+            <label for="codePostal">Code postal :</label><br />
+            <input type="text" name="codePostal" placeholder="Code postal">
           </div>
           <div class="form-group">
-            <label for="rue">Numéro de rue :</label>
-            <input type="text" name="rue">
+            <label for="rue">Numéro de rue :</label><br />
+            <input type="text" name="rue" placeholder="Rue">
           </div>
           <div class="form-group">
-            <label for="type">Type du bien :</label>
+            <label for="type">Type du bien :</label><br />
             <SELECT name="type" size="1">
             <OPTION>Maison avec terrain
             <OPTION>Maison sans terrain
@@ -31,51 +31,55 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             </SELECT>
           </div>
           <div class="form-group">
-            <label for="numBatiment">Numéro du batiment(uniquement appartement) :</label>
-            <input type="text" name="numeroBatiment">
+            <label for="numBatiment">Numéro du batiment(uniquement appartement) :</label><br />
+            <input type="text" name="numeroBatiment" placeholder="Numéro du batiment">
           </div>
           <div class="form-group">
-            <label for="lieuDit">Lieu dit :</label>
-            <input type="text" name="lieuDit">
+            <label for="lieuDit">Lieu dit :</label><br />
+            <input type="text" name="lieuDit" placeholder="Lieu dit">
           </div>
           <div class="form-group">
-            <label for="numAppartement">Numéro de l\'appartement :</label>
-            <input type="text" name="numeroAppartement">
+            <label for="numAppartement">Numéro de l\'appartement :</label><br />
+            <input type="text" name="numeroAppartement" placeholder="Numéro de l\'appartement">
           </div>
           <div class="form-group">
-            <label for="superficieBien">Superficie du bien :</label>
-            <input type="text" name="superficieBien">
+          <label for="numAppartement">Numéro du batiment :</label><br />
+            <input type="text" name="numbatiment" placeholder="Numéro du batiment">
           </div>
           <div class="form-group">
-            <label for="superficieTerrain">Superficie du terrain :</label>
-            <input type="text" name="superficieTerrain">
+            <label for="superficieBien">Superficie du bien :</label><br />
+            <input type="text" name="superficieBien" placeholder="Superficie du bien">
           </div>
           <div class="form-group">
-            <label for="prixHFAI">Prix :</label>
-           <input type="text" name="prixHFAI">
+            <label for="superficieTerrain">Superficie du terrain :</label><br />
+            <input type="text" name="superficieTerrain" placeholder="Superficie du terrain">
+          </div>
+          <div class="form-group"> 
+            <label for="prixHFAI">Prix :</label><br />
+           <input type="text" name="prixHFAI" placeholder="Prix">
           </div>
           <div class="form-group">
-            <label for="image[1]">Photos :</label>
+            <label for="image[1]">Photos :</label><br />
             <input type="file" name="image" size="10" multiple>
           </div>
-          <div class="form-group">
-            <label for="nbPiece">Nombre de pièces :</label>
-            <input type="text" name="nbPiece">
+          <div class="form-group">  
+            <label for="nbPiece">Nombre de pièces :</label><br />
+            <input type="text" name="nbPiece" placeholder="Nombre de pièces">
           </div>
           <div class="form-group">
-            <label for="nbChambre">Nombre de chambre :</label>
-            <input type="text" name="nbChambre">
+            <label for="nbChambre">Nombre de chambre :</label><br />
+            <input type="text" name="nbChambre" placeholder="Nombre de chambre">
           </div>
           <div class="form-group">
-            <label for="ecoLogement">Eco Logementl :</label>
+            <label for="ecoLogement">Eco Logement :</label><br />
             <input type="checkbox" name="ecoLogement">
           </div>
           <div class="form-group">
-            <label for="emissionGES">Emisssion GES :</label>
+            <label for="emissionGES">Emission GES :</label><br />
             <input type="checkbox" name="emissionGES">
           </div>
          <div class="form-group">
-            <label for="valider">Valider :</label>
+            <label for="valider">Valider :</label><br />
             <input type="submit" name="valider">
           </div>
         </form>
@@ -84,9 +88,43 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     </div>';
 
 
+//-----------------------------------------------------------------------------------
+
+/*$ville = $_POST['ville'];
+$codePostal = $_POST['codepostal'];
+$rue = $_POST['rue'];
+
+// verifie si les cases sont remplies
+if(!isset($_POST['ville']) ||
+    !isset($_POST['codepostal']))
+
+    {
+    died('Désolé, il y a un problçeme avec le formulaire que vous avez rempli');
+}
+
+$ville = $_POST['ville']; // required
+$cotal = $_POST['codepostal']; // required*/
+
+
 
 
 
 
 //---------------------------------------------------------------------------
+if ( isset($_POST['valider']) && !empty($_POST['valider'])) //Test if submit button named submit was clicked and not empty
+
+{
+
+    if (!empty($_POST['ville']) && !empty($_POST['codePostal'])  && !empty($_POST['rue'])) {
+
+        $body = "Ville: {$_POST['ville']}\ncode postal: {$_POST['codePostal']}\nrue: {$_POST['rue']}";
+
+        $body = wordwrap($body, 70);
+
+
+        //header('Location: 127.0.0.1/GlobAgence/GlobAgence/App/V/BienController/queryFormAction.php');  //Redirect to new url if form submitted
+
+    }
+
+}
 

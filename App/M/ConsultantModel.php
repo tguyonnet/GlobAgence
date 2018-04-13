@@ -13,11 +13,14 @@ use Core\Object;
 
 class ConsultantModel extends Object
 {
-    protected static $_table = 'utilisateur';
+    protected static $_table ='consultant';
 
     protected $nom;
     protected $prenom;
     Protected $zone;
+    protected $nombreDeBiensEnVente;
+    protected $nombreDeBiensVendus;
+    protected $chiffreAffaire;
 
     /**
      * @return mixed
@@ -66,9 +69,6 @@ class ConsultantModel extends Object
     {
         return $this->chiffreAffaire;
     }
-    protected $nombreDeBiensEnVente;
-    protected $nombreDeBiensVendus;
-    protected $chiffreAffaire;
 
     public function getTable()
     {
