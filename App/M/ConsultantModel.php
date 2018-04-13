@@ -9,15 +9,34 @@
 namespace App\M;
 
 use Core\Object;
+use ZoneModel;
 
 
 class ConsultantModel extends Object
 {
-    protected static $_table = 'utilisateur';
+    protected static $_table = 'consultant';
 
+    protected  $id;
     protected $nom;
     protected $prenom;
-    Protected $zone;
+    protected $nombreDeBiensEnVente;
+    protected $nombreDeBiensVendus;
+    protected $chiffreAffaire;
+    protected $zone;
+
+    public function getTable()
+    {
+        return $this->_table;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
 
     /**
      * @return mixed
@@ -32,14 +51,16 @@ class ConsultantModel extends Object
      */
     public function getPrenom()
     {
+
         return $this->prenom;
     }
 
-    /**
+    /**l
      * @return mixed
      */
     public function getZone()
     {
+
         return $this->zone;
     }
 
@@ -62,18 +83,14 @@ class ConsultantModel extends Object
     /**
      * @return mixed
      */
+    /*
     public function getChiffreAffaire()
     {
         return $this->chiffreAffaire;
     }
-    protected $nombreDeBiensEnVente;
-    protected $nombreDeBiensVendus;
-    protected $chiffreAffaire;
+    */
 
-    public function getTable()
-    {
-        return $this->_table;
-    }
+
 
 
 
