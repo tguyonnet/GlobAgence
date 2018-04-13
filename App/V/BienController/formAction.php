@@ -54,7 +54,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <label for="superficieTerrain">Superficie du terrain :</label><br />
             <input type="text" name="superficieTerrain" placeholder="Superficie du terrain">
           </div>
-          <div class="form-group">
+          <div class="form-group"> 
             <label for="prixHFAI">Prix :</label><br />
            <input type="text" name="prixHFAI" placeholder="Prix">
           </div>
@@ -64,7 +64,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">  
             <label for="nbPiece">Nombre de pièces :</label><br />
-            <input type="text" name="nbPiece" placeholder="Nombre de pièce">
+            <input type="text" name="nbPiece" placeholder="Nombre de pièces">
           </div>
           <div class="form-group">
             <label for="nbChambre">Nombre de chambre :</label><br />

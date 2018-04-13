@@ -28,6 +28,8 @@ class DashBoardController extends \Core\Controller {
 
     }
 
+    
+    
     static public function verifLoginAction($params) {
 
         self::$_view->title = 'VerifLogin';

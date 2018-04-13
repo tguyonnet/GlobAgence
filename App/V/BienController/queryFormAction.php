@@ -5,7 +5,7 @@
  * Date: 06/04/18
  * Time: 17:12
  */
-echo "<h1>Ville :".$this->ville."</h1>";
+echo "<h1>Ville : ".$this->ville."</h1>";
 echo '<div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>';
@@ -22,7 +22,7 @@ echo '<div class="table-responsive">
                 </table>
                 </div>';
 
-echo "<h1>".$this->codePostal."</h1>";
+echo "<h1>Code postal : ".$this->codePostal."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -38,7 +38,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->rue."</h1>";
+echo "<h1>Rue : ".$this->rue."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -54,7 +54,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->numeroAppartement."</h1>";
+echo "<h1>Numéro d'appartement : ".$this->numeroAppartement."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -70,7 +70,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->lieuDit."</h1>";
+echo "<h1>Lieu dit : ".$this->lieuDit."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -86,7 +86,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->superficieBien."</h1>";
+echo "<h1>Superficie du mega chevalier : ".$this->superficieBien."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -102,7 +102,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->superficieTerrain."</h1>";
+echo "<h1>Superficie du terrain : ".$this->superficieTerrain."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -118,7 +118,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->prixHFAI."</h1>";
+echo "<h1>Prix HFAI : ".$this->prixHFAI."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -134,7 +134,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->numerobatiment."</h1>";
+echo "<h1>Numéro du batiment".$this->numerobatiment."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -150,7 +150,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->typeBienId."</h1>";
+echo "<h1>Type de bien : ".$this->typeBienId."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -166,7 +166,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->nombrePieces."</h1>";
+echo "<h1>Nombre de pièces".$this->nombrePieces."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -182,7 +182,7 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".$this->nombreChambres."</h1>";
+echo "<h1>Nombre de chambres".$this->nombreChambres."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
@@ -198,8 +198,8 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
     
-$ville = $_POST['ville'];
+/*$ville = $_POST['ville'];
 $codePostal = $_POST['codePostal'];
 $rue = $_POST['rue'];
 
-echo '<t>ville : '.$ville.' </t>'.'<br />'.'<t>code postal : '.$codePostal.' </t>'.'<br />'.'<t>rue : '.$rue.' </t>';
+echo '<t>ville : '.$ville.' </t>'.'<br />'.'<t>code postal : '.$codePostal.' </t>'.'<br />'.'<t>rue : '.$rue.' </t>';*/
