@@ -62,7 +62,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <label for="image[1]">Photos :</label><br />
             <input type="file" name="image" size="10" multiple>
           </div>
-          <div class="form-group">
+          <div class="form-group">  
             <label for="nbPiece">Nombre de pièces :</label><br />
             <input type="text" name="nbPiece" placeholder="Nombre de pièce">
           </div>
