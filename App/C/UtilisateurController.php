@@ -7,6 +7,7 @@ use App\M\UtilisateurModel;
 class UtilisateurController extends \Core\Controller {
 
 
+
     static public function listeClientAction() {
         self::$_view->utilisateur = UtilisateurModel::getAll();
         self::$_view->title = 'Liste des clients';
