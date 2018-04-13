@@ -13,7 +13,7 @@ use Core\Object;
 
 class ConsultantModel extends Object
 {
-    protected static $_table = 'consultant';
+    protected static $_table ='consultant';
 
     protected $nom;
     protected $prenom;
