@@ -13,7 +13,7 @@ echo '<div class="table-responsive">
                 foreach ($this->biens as $bien)
                 {
                  echo '<tr><td>';
-                 echo $bien->setVille();
+                 echo $bien->getVille();
                  echo '</td></tr>';
 
                  }
@@ -29,7 +29,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setCodePostal();
+                    echo $bien->getCodePostal();
                     echo'</td></tr>';
 
                  }
@@ -45,7 +45,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setRue();
+                    echo $bien->getRue();
                     echo'</td></tr>';
 
                  }
@@ -61,7 +61,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setNumeroAppartement();
+                    echo $bien->getNumeroAppartement();
                     echo'</td></tr>';
 
                  }
@@ -77,7 +77,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setlieuDit();
+                    echo $bien->getlieuDit();
                     echo'</td></tr>';
 
                  }
@@ -93,7 +93,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setSuperficieBien();
+                    echo $bien->getSuperficieBien();
                     echo'</td></tr>';
 
                  }
@@ -109,7 +109,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setSuperficieTerrain();
+                    echo $bien->getSuperficieTerrain();
                     echo'</td></tr>';
 
                  }
@@ -125,7 +125,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setprixHFAI();
+                    echo $bien->getprixHFAI();
                     echo'</td></tr>';
 
                  }
@@ -141,7 +141,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setNumeroBatiment();
+                    echo $bien->getNumeroBatiment();
                     echo'</td></tr>';
 
                  }
@@ -157,7 +157,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setTypeBienId();
+                    echo $bien->getTypeBienId();
                     echo'</td></tr>';
 
                  }
@@ -173,7 +173,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setNombrePieces();
+                    echo $bien->getNombrePieces();
                     echo'</td></tr>';
 
                  }
@@ -189,7 +189,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as $bien){
                     echo '<tr><td>';
-                    echo $bien->setNombreChambres();
+                    echo $bien->getNombreChambres();
                     echo'</td></tr>';
 
                  }
