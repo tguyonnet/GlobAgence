@@ -133,3 +133,67 @@ echo 'div class="table-responsive">
                  </tbody>
                  </table>
                  </div>';
+
+echo "<h1>".this->numerobatiment."</h1>";
+echo 'div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>';
+
+                foreach ($this-> biens as bien){
+                    echo '<tr><td>';
+                    echo bien->setNumeroBatiment();
+                    echo'</td></tr>';
+
+                 }
+                 echo '
+                 </tbody>
+                 </table>
+                 </div>';
+
+echo "<h1>".this->typeBienId."</h1>";
+echo 'div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>';
+
+                foreach ($this-> biens as bien){
+                    echo '<tr><td>';
+                    echo bien->setTypeBienId();
+                    echo'</td></tr>';
+
+                 }
+                 echo '
+                 </tbody>
+                 </table>
+                 </div>';
+
+echo "<h1>".this->nombrePieces."</h1>";
+echo 'div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>';
+
+                foreach ($this-> biens as bien){
+                    echo '<tr><td>';
+                    echo bien->setNombrePieces();
+                    echo'</td></tr>';
+
+                 }
+                 echo '
+                 </tbody>
+                 </table>
+                 </div>';
+
+echo "<h1>".this->nombreChambres."</h1>";
+echo 'div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>';
+
+                foreach ($this-> biens as bien){
+                    echo '<tr><td>';
+                    echo bien->setNombreChambres();
+                    echo'</td></tr>';
+
+                 }
+                 echo '
+                 </tbody>
+                 </table>
+                 </div>';
