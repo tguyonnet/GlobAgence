@@ -7,6 +7,7 @@
 // Une ligne pour contenir les carte de messages
 echo '<div class="row">';
 
+
 // Première carte de message
 echo '<!-- Comtenu du tableau-->
           <!--div class="container"-->
