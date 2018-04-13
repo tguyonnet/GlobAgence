@@ -43,6 +43,13 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <input type="text" name="numeroAppartement">
           </div>
           <div class="form-group">
+            <input type="text" name="numbatiment">
+          </div>
+          <div class="form-group">
+            <label for="numAppartement">Numéro de l\'appartement :</label><br />
+            <input type="text" name="numappartement">
+          </div>
+          <div class="form-group">
             <label for="superficieBien">Superficie du bien :</label><br />
             <input type="text" name="superficieBien">
           </div>
@@ -53,6 +60,8 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           <div class="form-group">
             <label for="prixHFAI">Prix :</label><br />
            <input type="text" name="prixHFAI">
+            <label for="prix">Prix :</label><br />
+           <input type="text" name="prix">
           </div>
           <div class="form-group">
             <label for="image[1]">Photos :</label><br />
@@ -60,6 +69,8 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">
             <label for="nbPiece">Nombre de pièces :</label><br />
+            <label for="nbPiece">Nombre de pièce :</label><br />
+
             <input type="text" name="nbPiece">
           </div>
           <div class="form-group">
@@ -72,6 +83,11 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">
             <label for="emissionGES">Emisssion GES :</label><br />
+            <label for="ecoLogement">Eco Logementl :</label><br />
+            <input type="checkbox" name="ecoLogement">
+          </div>
+          <div class="form-group">
+            <label for="emissionGES">Emission GES :</label><br />
             <input type="checkbox" name="emissionGES">
           </div>
          <div class="form-group">
@@ -84,9 +100,43 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     </div>';
 
 
+//-----------------------------------------------------------------------------------
+
+/*$ville = $_POST['ville'];
+$codePostal = $_POST['codepostal'];
+$rue = $_POST['rue'];
+
+// verifie si les cases sont remplies
+if(!isset($_POST['ville']) ||
+    !isset($_POST['codepostal']))
+
+    {
+    died('Désolé, il y a un problçeme avec le formulaire que vous avez rempli');
+}
+
+$ville = $_POST['ville']; // required
+$cotal = $_POST['codepostal']; // required*/
+
+
 
 
 
 
 //---------------------------------------------------------------------------
+if ( isset($_POST['valider']) && !empty($_POST['valider'])) //Test if submit button named submit was clicked and not empty
+
+{
+
+    if (!empty($_POST['ville']) && !empty($_POST['codePostal'])  && !empty($_POST['rue'])) {
+
+        $body = "Ville: {$_POST['ville']}\ncode postal: {$_POST['codePostal']}\nrue: {$_POST['rue']}";
+
+        $body = wordwrap($body, 70);
+
+
+        //header('Location: 127.0.0.1/GlobAgence/GlobAgence/App/V/BienController/queryFormAction.php');  //Redirect to new url if form submitted
+
+    }
+
+}
 

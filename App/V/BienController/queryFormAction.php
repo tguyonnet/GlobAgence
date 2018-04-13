@@ -197,3 +197,9 @@ echo 'div class="table-responsive">
                  </tbody>
                  </table>
                  </div>';
+    
+$ville = $_POST['ville'];
+$codePostal = $_POST['codePostal'];
+$rue = $_POST['rue'];
+
+echo '<t>ville : '.$ville.' </t>'.'<br />'.'<t>code postal : '.$codePostal.' </t>'.'<br />'.'<t>rue : '.$rue.' </t>';
