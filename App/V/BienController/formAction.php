@@ -9,15 +9,15 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         <form method="post" action="?c=Bien&a=queryForm">
           <div class="form-group">
             <label for="ville">Ville :</label><br />
-            <input type="text" name="ville">
+            <input type="text" name="ville" placeholder="Ville">
           </div>  
           <div class="form-group">
             <label for="codePostal">Code postal :</label><br />
-            <input type="text" name="codePostal">
+            <input type="text" name="codePostal" placeholder="Code postal">
           </div>
           <div class="form-group">
             <label for="rue">Numéro de rue :</label><br />
-            <input type="text" name="rue">
+            <input type="text" name="rue" placeholder="Rue">
           </div>
           <div class="form-group">
             <label for="type">Type du bien :</label><br />
@@ -32,33 +32,31 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">
             <label for="numBatiment">Numéro du batiment(uniquement appartement) :</label><br />
-            <input type="text" name="numeroBatiment">
+            <input type="text" name="numeroBatiment" placeholder="Numéro du batiment">
           </div>
           <div class="form-group">
             <label for="lieuDit">Lieu dit :</label><br />
-            <input type="text" name="lieuDit">
+            <input type="text" name="lieuDit" placeholder="Lieu dit">
           </div>
           <div class="form-group">
             <label for="numAppartement">Numéro de l\'appartement :</label><br />
-            <input type="text" name="numeroAppartement">
+            <input type="text" name="numeroAppartement" placeholder="Numéro de l\'appartement">
           </div>
           <div class="form-group">
           <label for="numAppartement">Numéro du batiment :</label><br />
-            <input type="text" name="numbatiment">
+            <input type="text" name="numbatiment" placeholder="Numéro du batiment">
           </div>
           <div class="form-group">
             <label for="superficieBien">Superficie du bien :</label><br />
-            <input type="text" name="superficieBien">
+            <input type="text" name="superficieBien" placeholder="Superficie du bien">
           </div>
           <div class="form-group">
             <label for="superficieTerrain">Superficie du terrain :</label><br />
-            <input type="text" name="superficieTerrain">
+            <input type="text" name="superficieTerrain" placeholder="Superficie du terrain">
           </div>
           <div class="form-group">
             <label for="prixHFAI">Prix :</label><br />
-           <input type="text" name="prixHFAI">
-            <label for="prix">Prix :</label><br />
-           <input type="text" name="prix">
+           <input type="text" name="prixHFAI" placeholder="Prix">
           </div>
           <div class="form-group">
             <label for="image[1]">Photos :</label><br />
@@ -70,7 +68,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">
             <label for="nbChambre">Nombre de chambre :</label><br />
-            <input type="text" name="nbChambre">
+            <input type="text" name="nbChambre" placeholder="Nombre de chambre">
           </div>
           <div class="form-group">
             <label for="ecoLogement">Eco Logement :</label><br />
