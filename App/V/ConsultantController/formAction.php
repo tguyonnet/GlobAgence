@@ -14,41 +14,41 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
       <div class="card-body text-center">
         <form method="post" action="?c=Consultant&a=queryForm">
           <div class="form-group">
-            <label for="nom">Nom :</label>
+            <label for="nom">Nom :</label><br />
             <input type="text" name="nom">
           </div>  
           <div class="form-group">
-            <label for="prenom">Prenom :</label>
+            <label for="prenom">Prenom :</label><br />
             <input type="text" name="codepostal">
           </div>
           <div class="form-group">
-            <label for="dateNaissance">Date de naissance :</label>
+            <label for="dateNaissance">Date de naissance :</label><br />
             <input type="text" name="dateNaissance">
           </div>
           <div class="form-group">
-            <label for="email">Email :</label>
+            <label for="email">Email :</label><br />
             <input type="text" name="email">
           </div>
           <div class="form-group">
-            <label for="telephone">Numéro de téléphone :</label>
+            <label for="telephone">Numéro de téléphone :</label><br />
             <input type="text" name="telephone">
           </div>
           <div class="form-group">
-          <label for="rue">Rue :</label>
+          <label for="rue">Rue :</label><br />
             <input type="text" name="telephone">
          </div>
          <div>
          <div class="form-group">
-         <label for="ville">Ville :</label>
+         <label for="ville">Ville :</label><br />
             <input type="text" name="ville">
           </div>
           <div>
           <div class="form-group">
-          <label for="codePostal">Code Postal :</label>
+          <label for="codePostal">Code Postal :</label><br />
             <input type="text" name="codePostal">
           </div>
          <div class="form-group">
-            <label for="valider">Valider :</label>
+            <label for="valider">Valider :</label><br />
             <input type="submit" name="valider">
           </div>
         </form>
