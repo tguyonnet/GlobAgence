@@ -50,20 +50,17 @@
 
                   </div>
               </li>
-              <li class="nav-item active ">
-                  <a class="text-white nav-link" href="?c=DashBoard&a=login">Se connecter</a>
+              <li class="nav-item active">
+                  <a class="text-white nav-link" href="?c=DashBoard&a=login">Connexion</a>
               </li>
               <li>
                   <p><?php echo $_SESSION["nom"]; ?></p>
               </li>
 
               <li class="nav-item active ">
-                  <a class="text-white nav-link" href="?c=DashBoard&a=login">se déconnecter</a>
+                  <a class="text-white nav-link" href="?c=DashBoard&a=login">Déconnexion</a>
               </li>
 
-              <!--<li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-              </li>-->
           </ul>
       </div>
   </nav>
