@@ -5,39 +5,53 @@
  * Date: 06/04/18
  * Time: 14:04
  */
-echo'<div class="card-header"> '.$this->title.'</div>';
-
-
-echo '<img src="http://external-images.premiere.fr/var/premiere/storage/images/tele/news-tele/les-experts-c-est-vous-fin-de-parcours-pour-stephane-plaza/37431960-1-fre-FR/Les-Experts-c-est-vous-fin-de-parcours-pour-Stephane-Plaza.jpg" class="rounded img-left" alt="TEST">';
-
+echo'<style>
+     div.relative {
+         position: relative;
+         left: 500px;
+     }
+     div.card-img-bottom {
+        border: 0;
+        height: 20rem;
+        background: url(https://picsum.photos/200/300/?random) center no-repeat;
+        background-size: cover;
+        float:left;
+     }
+     </style>
+     <div class="card-header"> '.$this->title.'<div class="position-relative"></div>';
 
 foreach($this->biens as $bien) {
 
     //Texte a coté de l'image
-    echo '  <div class="col-xl-3 mt-2">
-            <div class="card text-black o-hidden">
-            <div class="card-body">
-            <div class="card-body-icon"></div>';
-
-
-    echo '<div>Code de charge: ', $bien->getChargeId(), '</div>';
-    echo '<div>Code de statut: ', $bien->getStatutId(), '</div>';
-    echo '<div>Code d\'eau: ', $bien->getEauId(), '</div>';
-    echo '<div>Code de chauffage: ', $bien->getChauffageId(), '</div>';
-    echo '<div>Code de type de bien: ', $bien->getTypeBienId(), '</div>';
-    echo '<div>Superficie du bien: ', $bien->getSuperficieBien(), '</div>';
-    echo '<div>Superficie du terrain: ', $bien->getSuperficieTerrain(), '</div>';
-    echo '<div>Prix HFAI: ', $bien->getPrixHFAI(), '</div>';
-    echo '<div>Nombre de pièces: ', $bien->getNombrePieces(), '</div>';
-    echo '<div>Nombre de chambres: ', $bien->getNombreChambres(), '</div>';
-    echo '<div>Numéro de l\'appartement: ', $bien->getNumeroAppartement(), '</div>';
-    echo '<div>Adresse: ', $bien->getRue(),' ', $bien->getLieuDit(),' ', $bien->getCodePostal(),' ', $bien->getVille(), '</div>';
+    echo'<div class ="container">
+         <div class="card text-black o-hidden">
+         <div class="card-body">
+         <div class="card-body-icon">';
 
 
 
 
-    echo '   </div>
-        </div>
-        </div>';
+    echo'<div class="col-xl-3 mt-2">
+               <div class="card-img-bottom"></div>
+         </div>';
+
+    echo'<div class="relative">    
+              Prix : ', $bien->getPrixHFAI(),' €',
+        '<br/>Nombre de pièces : ', $bien->getNombrePieces(),
+        '<br/>Nombre de chambres : ', $bien->getNombreChambres(),
+        '<br/>Numéro de l\'appartement : ', $bien->getNumeroAppartement(),
+        '<br/>Adresse : ', $bien->getRue(),' ', $bien->getLieuDit(),' ', $bien->getCodePostal(),' ', $bien->getVille(),
+        '<br/>Superficie du bien : ', $bien->getSuperficieBien(),'m²',
+        '<br/>Superficie du terrain : ', $bien->getSuperficieTerrain(),'m²',
+        '<br/>Code de charge : ', $bien->getChargeId(),
+        '<br/>Code de statut : ', $bien->getStatutId(),
+        '<br/>Code d\'eau : ', $bien->getEauId(),
+        '<br/>Code de chauffage : ', $bien->getChauffageId(),
+        '<br/>Code de type de bien : ', $bien->getTypeBienId(), '</div>';
+
+    echo'</div>
+         </div>
+         </div>
+         </div>';
 
 }
