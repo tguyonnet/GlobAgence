@@ -19,4 +19,8 @@ class ConsultantController extends \Core\Controller {
         self::$_view->title = 'Liste des consultants';
     }
 
+    static public function listeClientAction() {
+        self::$_view->consultants = ConsultantModel::getAll();
+        self::$_view->title = 'Liste des clients des consultants';
+    }
 }
