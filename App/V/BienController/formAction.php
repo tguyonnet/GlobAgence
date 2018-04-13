@@ -43,11 +43,8 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <input type="text" name="numeroAppartement">
           </div>
           <div class="form-group">
+          <label for="numAppartement">Numéro du batiment :</label><br />
             <input type="text" name="numbatiment">
-          </div>
-          <div class="form-group">
-            <label for="numAppartement">Numéro de l\'appartement :</label><br />
-            <input type="text" name="numappartement">
           </div>
           <div class="form-group">
             <label for="superficieBien">Superficie du bien :</label><br />
