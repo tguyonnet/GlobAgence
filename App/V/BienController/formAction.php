@@ -66,9 +66,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">
             <label for="nbPiece">Nombre de pièces :</label><br />
-            <label for="nbPiece">Nombre de pièce :</label><br />
-
-            <input type="text" name="nbPiece">
+            <input type="text" name="nbPiece" placeholder="Nombre de pièce">
           </div>
           <div class="form-group">
             <label for="nbChambre">Nombre de chambre :</label><br />
@@ -76,11 +74,6 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">
             <label for="ecoLogement">Eco Logement :</label><br />
-            <input type="checkbox" name="ecoLogement">
-          </div>
-          <div class="form-group">
-            <label for="emissionGES">Emisssion GES :</label><br />
-            <label for="ecoLogement">Eco Logementl :</label><br />
             <input type="checkbox" name="ecoLogement">
           </div>
           <div class="form-group">
