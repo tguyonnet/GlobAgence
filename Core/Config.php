@@ -10,6 +10,6 @@ class Config{
     const BDD_PASSWORD  = 'pwgrant';
 
     // For Application settings
-    const APPLI_NAME    = 'GlobAgence';
-    const APPLI_VERSION = 'v0.000.0.0.00.0.00.bug.0.1';
+    const APPLI_NAME    = 'FATAL';
+    const APPLI_VERSION = 'v.-2';
 }

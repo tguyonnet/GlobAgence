@@ -6,7 +6,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
       <div class="card card-login mx-auto mt-5">
       <div class="card-header text-center text-white bg-dark">Formulaire d\'ajout de bien</div>
       <div class="card-body text-center">
-        <form method="post">
+        <form method="post" action="?c=Bien&a=queryForm">
           <div class="form-group">
             <label for="ville">Ville :</label>
             <input type="text" name="ville">

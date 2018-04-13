@@ -26,5 +26,9 @@ class BienController extends \Core\Controller {
         self::$_view->biens = BienModel::getAll();
         self::$_view->title = 'Liste des Biens CLIENTS';
     }
-
+    static public function queryFormAction($params){
+        self::$_view->ville=$params["ville"];
+        self::$_view->biens = BienModel::getAll();
+        self::$_view->title = 'Liste des Biens';
+    }
 }
