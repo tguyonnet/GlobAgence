@@ -31,4 +31,9 @@ class BienController extends \Core\Controller {
         self::$_view->biens = BienModel::getAll();
         self::$_view->title = 'Liste des Biens';
     }
+    static public function validFormAction($params){
+        self::$_view->biens = $params["validForm"];
+        self::$_view->biens = BienModel::getAll();
+        self::$_view->title = 'Formulaire envoyé';
+    }
 }
