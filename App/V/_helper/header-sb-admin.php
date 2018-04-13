@@ -35,6 +35,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="?c=Consultant&a=liste">Liste</a>
+                      <a class="dropdown-item" href="?c=Consultant&a=form">Formulaire</a>
                       <!--<div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Something else here</a>-->
                   </div>
@@ -50,16 +51,25 @@
 
                   </div>
               </li>
-              <li class="nav-item active">
-                  <a class="text-white nav-link" href="?c=DashBoard&a=login">Connexion</a>
-              </li>
               <li>
-                  <p><?php echo $_SESSION["nom"]; ?></p>
+                  <?php
+                  if (isset($_SESSION["nom"])) {
+                      echo  "<a class=\"text-warning nav-link\" href=\"#\" >".$_SESSION["nom"]."</a>";
+                  }
+                  ?>
+              </li>
+          </ul>
+              <ul>
+
+              <li class="nav-item active">
+                  <a class="text-white  nav-link" href="?c=DashBoard&a=login">Connexion</a>
               </li>
 
+
               <li class="nav-item active ">
-                  <a class="text-white nav-link" href="?c=DashBoard&a=login">Déconnexion</a>
+                  <a class="text-white nav-link" href="?c=DashBoard&a=liste">Déconnexion</a>
               </li>
+
 
           </ul>
       </div>
