@@ -20,9 +20,9 @@ function __autoload($class){
 
 
 // Chargement du controlleur avec les paramètres du POST et ceux du GET
-$controllerName = '\\App\\C\\'.\Core\Params::post('c',  \Core\Params::get('c','DashBoard')).'Controller';
+$controllerName = '\\App\\C\\'.\Core\Params::post('c',  \Core\Params::get('c','Bien')).'Controller';
 
-$actionName=  \Core\Params::post('a',  \Core\Params::get('a','liste')).'Action';
+$actionName=  \Core\Params::post('a',  \Core\Params::get('a','listeClient')).'Action';
 
 
 // Prépare la connexion à la bdd
