@@ -15,37 +15,37 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         <form method="post" action="?c=Consultant&a=queryForm">
           <div class="form-group">
             <label for="nom">Nom :</label><br />
-            <input type="text" name="nom">
+            <input type="text" name="nom" placeholder="Nom">
           </div>  
           <div class="form-group">
-            <label for="prenom">Prenom :</label><br />
-            <input type="text" name="codepostal">
+            <label for="prenom">Prénom :</label><br />
+            <input type="text" name="prenom" placeholder="Prénom">
           </div>
           <div class="form-group">
             <label for="dateNaissance">Date de naissance :</label><br />
-            <input type="text" name="dateNaissance">
+            <input type="date" name="dateNaissance" placeholder="Date de naissance">
           </div>
           <div class="form-group">
             <label for="email">Email :</label><br />
-            <input type="text" name="email">
+            <input type="text" name="email" placeholder="Email">
           </div>
           <div class="form-group">
             <label for="telephone">Numéro de téléphone :</label><br />
-            <input type="text" name="telephone">
+            <input type="text" name="telephone" placeholder="Téléphone">
           </div>
           <div class="form-group">
           <label for="rue">Rue :</label><br />
-            <input type="text" name="telephone">
+            <input type="text" name="rue" placeholder="Rue">
          </div>
          <div>
          <div class="form-group">
          <label for="ville">Ville :</label><br />
-            <input type="text" name="ville">
+            <input type="text" name="ville" placeholder="Ville">
           </div>
           <div>
           <div class="form-group">
           <label for="codePostal">Code Postal :</label><br />
-            <input type="text" name="codePostal">
+            <input type="text" name="codePostal" placeholder="Code Postal">
           </div>
          <div class="form-group">
             <label for="valider">Valider :</label><br />
