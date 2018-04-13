@@ -13,7 +13,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>  
           <div class="form-group">
             <label for="codePostal">Code postal :</label>
-            <input type="text" name="codepostal">
+            <input type="text" name="codePostal">
           </div>
           <div class="form-group">
             <label for="rue">Numéro de rue :</label>
@@ -32,11 +32,11 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           </div>
           <div class="form-group">
             <label for="numBatiment">Numéro du batiment(uniquement appartement) :</label>
-            <input type="text" name="numbatiment">
+            <input type="text" name="numeroBatiment">
           </div>
           <div class="form-group">
             <label for="numAppartement">Numéro de l\'appartement :</label>
-            <input type="text" name="numappartement">
+            <input type="text" name="numeroAppartement">
           </div>
           <div class="form-group">
             <label for="superficieBien">Superficie du bien :</label>
