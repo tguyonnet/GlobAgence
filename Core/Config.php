@@ -4,10 +4,10 @@ namespace Core;
 
 class Config{
     // For database settings
-    const BDD_HOST      = 'localhost';
-    const BDD_NAME      = 'GlobAgence';
-    const BDD_USER      = 'root';
-    const BDD_PASSWORD  = 'pwsio';
+    const BDD_HOST      = '172.21.4.195';
+    const BDD_NAME      = 'GlobAgenceRemake';
+    const BDD_USER      = 'usergrant';
+    const BDD_PASSWORD  = 'pwgrant';
 
 
     // For Application settings
