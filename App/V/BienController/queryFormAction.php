@@ -13,7 +13,7 @@ echo '<div class="table-responsive">
                 foreach ($this->biens as bien)
                 {
                  echo '<tr><td>';
-                 echo bien->getVille();
+                 echo bien->setVille();
                  echo '</td></tr>';
 
                  }
@@ -29,7 +29,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as bien){
                     echo '<tr><td>';
-                    echo bien->getCodePostal();
+                    echo bien->setCodePostal();
                     echo'</td></tr>';
 
                  }
@@ -45,7 +45,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as bien){
                     echo '<tr><td>';
-                    echo bien->getRue();
+                    echo bien->setRue();
                     echo'</td></tr>';
 
                  }
@@ -61,7 +61,7 @@ echo 'div class="table-responsive">
 
                 foreach ($this-> biens as bien){
                     echo '<tr><td>';
-                    echo bien->getNumeroAppartement();
+                    echo bien->setNumeroAppartement();
                     echo'</td></tr>';
 
                  }
@@ -76,8 +76,8 @@ echo 'div class="table-responsive">
                 <thead>';
 
                 foreach ($this-> biens as bien){
-    echo '<tr><td>';
-    echo bien->getlieuDit();
+                    echo '<tr><td>';
+                    echo bien->setlieuDit();
                     echo'</td></tr>';
 
                  }
@@ -86,14 +86,46 @@ echo 'div class="table-responsive">
                  </table>
                  </div>';
 
-echo "<h1>".this->numeroAppartement."</h1>";
+echo "<h1>".this->superficieBien."</h1>";
 echo 'div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>';
 
                 foreach ($this-> biens as bien){
-    echo '<tr><td>';
-    echo bien->getNumeroAppartement();
+                    echo '<tr><td>';
+                    echo bien->setSuperficieBien();
+                    echo'</td></tr>';
+
+                 }
+                 echo '
+                 </tbody>
+                 </table>
+                 </div>';
+
+echo "<h1>".this->superficieTerrain."</h1>";
+echo 'div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>';
+
+                foreach ($this-> biens as bien){
+                    echo '<tr><td>';
+                    echo bien->setSuperficieTerrain();
+                    echo'</td></tr>';
+
+                 }
+                 echo '
+                 </tbody>
+                 </table>
+                 </div>';
+
+echo "<h1>".this->prixHFAI."</h1>";
+echo 'div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>';
+
+                foreach ($this-> biens as bien){
+                    echo '<tr><td>';
+                    echo bien->setprixHFAI();
                     echo'</td></tr>';
 
                  }

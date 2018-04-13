@@ -35,6 +35,10 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <input type="text" name="numeroBatiment">
           </div>
           <div class="form-group">
+            <label for="lieuDit">Lieu dit :</label>
+            <input type="text" name="lieuDit">
+          </div>
+          <div class="form-group">
             <label for="numAppartement">Numéro de l\'appartement :</label>
             <input type="text" name="numeroAppartement">
           </div>
@@ -47,15 +51,15 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <input type="text" name="superficieTerrain">
           </div>
           <div class="form-group">
-            <label for="prix">Prix :</label>
-           <input type="text" name="prix">
+            <label for="prixHFAI">Prix :</label>
+           <input type="text" name="prixHFAI">
           </div>
           <div class="form-group">
             <label for="image[1]">Photos :</label>
             <input type="file" name="image" size="10" multiple>
           </div>
           <div class="form-group">
-            <label for="nbPiece">Nombre de pièce :</label>
+            <label for="nbPiece">Nombre de pièces :</label>
             <input type="text" name="nbPiece">
           </div>
           <div class="form-group">
@@ -67,7 +71,7 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
             <input type="checkbox" name="ecoLogement">
           </div>
           <div class="form-group">
-            <label for="emissionGES">Emission GES :</label>
+            <label for="emissionGES">Emisssion GES :</label>
             <input type="checkbox" name="emissionGES">
           </div>
          <div class="form-group">
