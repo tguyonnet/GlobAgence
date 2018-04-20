@@ -26,9 +26,6 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <a class="text-white nav-link" href="?c=Ligue&a=liste">Ligue</a>
-              </li>
               <li class="nav-item dropdown">
                   <a class="text-white nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Consultants
@@ -55,22 +52,16 @@
                   <?php
                   if (isset($_SESSION["nom"])) {
                       echo  "<a class=\"text-warning nav-link\" href=\"#\" >".$_SESSION["nom"]."</a>";
+                      echo " <li class=\"nav-item active\">
+                                <a class=\"text-white nav-link\" href=\"?c=DashBoard&a=liste\">Déconnexion</a>
+                             </li>";
+                  }else{
+                      echo "<li class=\"nav-item active\">
+                                 <a class=\"text-white  nav-link\" href=\"?c=DashBoard&a=login\">Connexion</a>
+                            </li>";
                   }
                   ?>
               </li>
-          </ul>
-              <ul>
-
-              <li class="nav-item active">
-                  <a class="text-white  nav-link" href="?c=DashBoard&a=login">Connexion</a>
-              </li>
-
-
-              <li class="nav-item active ">
-                  <a class="text-white nav-link" href="?c=DashBoard&a=liste">Déconnexion</a>
-              </li>
-
-
           </ul>
       </div>
   </nav>

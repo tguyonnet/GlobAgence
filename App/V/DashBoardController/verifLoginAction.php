@@ -1,10 +1,10 @@
 <?php
 if ($this->authentification)
 {
-    header("location:index.php??c=DashBoard&a=liste");
+    header("location:?c=DashBoard&a=liste");
 }
 else
 {
-    header("location:index.php??c=DashBoard&a=login");
+    header("location:?c=DashBoard&a=login");
 
 }

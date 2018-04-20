@@ -29,8 +29,8 @@ class DashBoardController extends \Core\Controller {
     }
 
     
-    
-    static public function verifLoginAction($params) {
+
+    public static function verifLoginAction($params) {
 
         self::$_view->title = 'VerifLogin';
         // recuperation des email et password issue de la classe utilisateurModel
