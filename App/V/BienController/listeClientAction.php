@@ -17,8 +17,7 @@ echo'<style>
         background-size: cover;
         float:left;
      }
-     </style>
-     <div class="card-header"> '.$this->title.'<div class="position-relative"></div>';
+     </style>';
 
 foreach($this->biens as $bien) {
 
