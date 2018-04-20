@@ -111,20 +111,7 @@ $cotal = $_POST['codepostal']; // required*/
 
 
 //---------------------------------------------------------------------------
-if ( isset($_POST['valider']) && !empty($_POST['valider'])) //Test if submit button named submit was clicked and not empty
-
-{
-
-    if (!empty($_POST['ville']) && !empty($_POST['codePostal'])  && !empty($_POST['rue'])) {
-
-        $body = "Ville: {$_POST['ville']}\ncode postal: {$_POST['codePostal']}\nrue: {$_POST['rue']}";
-
-        $body = wordwrap($body, 70);
 
 
-        //header('Location: 127.0.0.1/GlobAgence/GlobAgence/App/V/BienController/queryFormAction.php');  //Redirect to new url if form submitted
 
-    }
-
-}
 

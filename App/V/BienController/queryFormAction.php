@@ -202,4 +202,5 @@ $ville = $_POST['ville'];
 $codePostal = $_POST['codePostal'];
 $rue = $_POST['rue'];
 
-echo '<t>ville : '.$ville.' </t>'.'<br />'.'<t>code postal : '.$codePostal.' </t>'.'<br />'.'<t>rue : '.$rue.' </t>';
+
+echo '<br /><h1 style=text-align:center;> Le bien a correctement été ajouté</h1>'.'<br />'.' <t>ville : ' .$ville.'</t>'.'<br />'.'<t>code postal : '.$codePostal.' </t>'.'<br />'.'<t>rue : '.$rue.' </t>';

@@ -28,18 +28,17 @@ class BienController extends \Core\Controller {
     }
     static public function queryFormAction($params){
 
-        // Recupére tous les biens de la BDD
+        // Recupère tous les biens de la BDD
         self::$_view->biens = BienModel::getAll();
         $unNouveauBien = new BienModel();
         $unNouveauBien->setVille($params["ville"]);
+        $unNouveauBien->setCodePostal($params["codePostal"]);
         $unNouveauBien->store();
 
 
 
 
        /*
-
-
         self::$_view->ville = $params["ville"];
         self::$_view->codePostal = $params["codePostal"];
         self::$_view->rue = $params["rue"];
@@ -53,11 +52,14 @@ class BienController extends \Core\Controller {
         self::$_view->nombrePieces = $params["nombrePieces"];
         self::$_view->nombreChambres = $params["nombreChambres"];
         self::$_view->biens = BienModel::getAll();
-        self::$_view->title = 'Formulaire achevé';*/
+        self::$_view->title = 'Formulaire achevé';
+       */
     }
-    /*static public function validFormAction($params){
+    /*
+        static public function validFormAction($params){
         self::$_view->biens = $params["validForm"];
         self::$_view->biens = BienModel::getAll();
         self::$_view->title = 'Formulaire envoyé';
-    }*/
+    }
+    */
 }
