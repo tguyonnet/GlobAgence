@@ -13,6 +13,8 @@ use App\M\UtilisateurModel;
 use App\M\ZoneModel;
 
 
+use App\M\ConsultantModel;
+
 class ConsultantController extends \Core\Controller {
 
 
