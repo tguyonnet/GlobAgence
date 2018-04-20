@@ -12,5 +12,5 @@ class Config{
 
     // For Application settings
     const APPLI_NAME    = 'GlobAgence';
-    const APPLI_VERSION = 'v1';
+    const APPLI_VERSION = 'v3';
 }
