@@ -26,4 +26,21 @@ class ConsultantController extends \Core\Controller {
     }
 
 
+    static public function queryFormAction($params)
+    {
+
+        // Recupére tous les biens de la BDD
+        self::$_view->utilisateur = UtilisateurModel::getAll();
+        $unNouveauConsultant = new UtilisateurModel();
+        $unNouveauConsultant->setNom($params["nom"]);
+        $unNouveauConsultant->setPrenom($params["prenom"]);
+        $unNouveauConsultant->setDateNaissance($params["dateNaissance"]);
+        $unNouveauConsultant->setEmail($params["email"]);
+        $unNouveauConsultant->setTelephone($params["telephone"]);
+        $unNouveauConsultant->setRue($params["rue"]);
+        $unNouveauConsultant->setVille($params["ville"]);
+        $unNouveauConsultant->setCodePostal($params["CodePostal"]);
+        $unNouveauConsultant->store();
+    }
+
 }

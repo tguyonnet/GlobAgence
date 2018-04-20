@@ -87,6 +87,4 @@ class ConsultantModel extends Object
     }
 
 
-
-
 }

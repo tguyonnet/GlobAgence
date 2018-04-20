@@ -150,6 +150,111 @@ class UtilisateurModel extends Object
         return $this->consultant_id;
     }
 
+    /**
+     * @param string $table
+     */
+    public static function setTable($table)
+    {
+        self::$_table = $table;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @param mixed $droit_id
+     */
+    public function setDroitId($droit_id)
+    {
+        $this->droit_id = $droit_id;
+    }
+
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @param mixed $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @param mixed $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
+    /**
+     * @param mixed $dateNaissance
+     */
+    public function setDateNaissance($dateNaissance)
+    {
+        $this->dateNaissance = $dateNaissance;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @param mixed $telephone
+     */
+    public function setTelephone($telephone)
+    {
+        $this->telephone = $telephone;
+    }
+
+    /**
+     * @param mixed $rue
+     */
+    public function setRue($rue)
+    {
+        $this->rue = $rue;
+    }
+
+    /**
+     * @param mixed $ville
+     */
+    public function setVille($ville)
+    {
+        $this->ville = $ville;
+    }
+
+    /**
+     * @param mixed $codePostal
+     */
+    public function setCodePostal($codePostal)
+    {
+        $this->codePostal = $codePostal;
+    }
+
+    /**
+     * @param mixed $consultant_id
+     */
+    public function setConsultantId($consultant_id)
+    {
+        $this->consultant_id = $consultant_id;
+    }
+
+
 
 
 
