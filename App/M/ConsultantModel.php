@@ -18,7 +18,7 @@ class ConsultantModel extends Object
     protected $id;
     protected $nom;
     protected $prenom;
-    Protected $zone;
+    protected $zone;
     protected $nombreDeBiensEnVente;
     protected $nombreDeBiensVendus;
     protected $chiffreAffaire;

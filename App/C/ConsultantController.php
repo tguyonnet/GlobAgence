@@ -10,10 +10,7 @@ namespace App\C;
 
 use App\M\ConsultantModel;
 use App\M\UtilisateurModel;
-use App\M\ZoneModel;
 
-
-use App\M\ConsultantModel;
 
 class ConsultantController extends \Core\Controller {
 
