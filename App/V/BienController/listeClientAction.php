@@ -13,7 +13,7 @@ echo'<style>
      div.card-img-bottom {
         border: 0;
         height: 20rem;
-        background: url(https://picsum.photos/200/300/?random) center no-repeat;
+        background: url(https://picsum.photos/400/300/?random) center no-repeat;
         background-size: cover;
         float:left;
      }

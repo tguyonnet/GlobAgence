@@ -33,6 +33,17 @@ class BienController extends \Core\Controller {
         $unNouveauBien = new BienModel();
         $unNouveauBien->setVille($params["ville"]);
         $unNouveauBien->setCodePostal($params["codePostal"]);
+        $unNouveauBien->setRue($params["rue"]);
+        $unNouveauBien->setNumeroAppartement($params["numeroAppartement"]);
+        $unNouveauBien->setLieuDit($params["lieuDit"]);
+        $unNouveauBien->setSuperficieBien($params["superficieBien"]);
+        $unNouveauBien->setTerrain($params["superficieTerrain"]);
+        $unNouveauBien->setPrixHFAI($params["prixHFAI"]);
+        $unNouveauBien->setNumeroBatiment($params["numerobatiment"]);
+        $unNouveauBien->setTypeBienId($params["typeBienId"]);
+        $unNouveauBien->setNombrePieces($params["nombrePieces"]);
+        $unNouveauBien->setNombreChambres($params["nombreChambres"]);
+
         $unNouveauBien->store();
 
 
