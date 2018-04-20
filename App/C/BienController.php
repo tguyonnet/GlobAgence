@@ -24,7 +24,7 @@ class BienController extends \Core\Controller {
 
     static public function listeClientAction() {
         self::$_view->biens = BienModel::getAll();
-        self::$_view->title = 'Liste des Biens CLIENTS';
+        self::$_view->title = 'Accueil - GlobAgence Immo';
     }
     static public function queryFormAction($params){
 
