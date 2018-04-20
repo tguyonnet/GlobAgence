@@ -50,4 +50,9 @@ class DashBoardController extends \Core\Controller {
         }
     }
 
+    public static function sessionDestroy() {
+        session_destroy();
+
+    }
+
 }

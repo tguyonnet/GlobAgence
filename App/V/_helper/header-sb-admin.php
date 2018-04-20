@@ -52,9 +52,11 @@
                   <?php
                   if (isset($_SESSION["nom"])) {
                       echo  "<a class=\"text-warning nav-link\" href=\"#\" >".$_SESSION["nom"]."</a>";
-                      echo " <li class=\"nav-item active\">
+                      echo " <form action='?c=DashBoard&a=sessionDestroy'>
+                             <li class=\"nav-item active\">
                                 <a class=\"text-white nav-link\" href=\"?c=DashBoard&a=liste\">Déconnexion</a>
-                             </li>";
+                             </li>
+                             </form>";
                   }else{
                       echo "<li class=\"nav-item active\">
                                  <a class=\"text-white  nav-link\" href=\"?c=DashBoard&a=login\">Connexion</a>
