@@ -1,7 +1,7 @@
 <?php
 if ($this->authentification)
 {
-    header("location:?c=DashBoard&a=liste");
+    header("location:?c=Bien&a=listeClient");
 }
 else
 {
