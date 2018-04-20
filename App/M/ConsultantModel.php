@@ -14,7 +14,8 @@ use Core\Object;
 class ConsultantModel extends Object
 {
     protected static $_table = 'consultant';
-
+    
+    protected $id
     protected $nom;
     protected $prenom;
     Protected $zone;
@@ -25,6 +26,10 @@ class ConsultantModel extends Object
     /**
      * @return mixed
      */
+    public function getId(){
+        return $this->id;
+    }
+    
     public function getNom()
     {
         return $this->nom;
