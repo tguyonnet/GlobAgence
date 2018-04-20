@@ -30,6 +30,8 @@ class BienModel extends Object
     protected $superficieTerrain;
     protected $typeBien_id;
     protected $ville;
+    protected $emissionGES;
+    protected $ecoLogement;
 
     /**
      * @return string
@@ -177,6 +179,22 @@ class BienModel extends Object
     }
 
     /**
+     * @return mixed
+     */
+    public function getEmissionGES()
+    {
+        return $this->emissionGES;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEcoLogement()
+    {
+        return $this->ecoLogement;
+    }
+
+    /**
      * @param mixed $charge_id
      */
     public function setChargeId($charge_id)
@@ -310,6 +328,22 @@ class BienModel extends Object
     public function setVille($ville)
     {
         $this->ville = $ville;
+    }
+
+    /**
+     * @param mixed $emissionGES
+     */
+    public function setEmissionGES($emissionGES)
+    {
+        $this->emissionGES = $emissionGES;
+    }
+
+    /**
+     * @param mixed $ecoLogement
+     */
+    public function setEcoLogement($ecoLogement)
+    {
+        $this->ecoLogement = $ecoLogement;
     }
 
 

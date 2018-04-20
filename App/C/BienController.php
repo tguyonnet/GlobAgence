@@ -43,6 +43,8 @@ class BienController extends \Core\Controller {
         $unNouveauBien->setNumeroBatiment($params["numeroBatiment"]);
         $unNouveauBien->setNombrePieces($params["nbPiece"]);
         $unNouveauBien->setNombreChambres($params["nbChambre"]);
+        $unNouveauBien->setEcoLogement($params["ecoLogement"]);
+        $unNouveauBien->setEmissionGES($params["emissionGES"]);
 
         $unNouveauBien->store();
 

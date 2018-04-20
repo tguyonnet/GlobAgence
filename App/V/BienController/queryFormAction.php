@@ -201,17 +201,32 @@ echo 'div class="table-responsive">
 $ville = $_POST['ville'];
 $codePostal = $_POST['codePostal'];
 $rue = $_POST['rue'];
-$rue = $_POST['rue'];
-$rue = $_POST['rue'];
-$rue = $_POST['rue'];
-$rue = $_POST['rue'];
-$rue = $_POST['rue'];
-$rue = $_POST['rue'];
-$rue = $_POST['rue'];
+$numeroAppartement = $_POST['numeroAppartement'];
+$lieuDit = $_POST['lieuDit'];
+$superficieBien = $_POST['superficieBien'];
+$superficieTerrain = $_POST['superficieTerrain'];
+$prixHFAI = $_POST['prixHFAI'];
+$numeroBatiment = $_POST['numeroBatiment'];
+$nbPiece = $_POST['nbPiece'];
+$nbChambre = $_POST['nbChambre'];
+$ecoLogement = $_POST['ecoLogement'];
+$emissionGES = $_POST['emissionGES'];
+
+
 
 
 
 echo '<br /><h1 style=text-align:center;> Le bien a correctement été ajouté</h1>'.'<br />'.
     '<t>ville : ' .$ville.'</t>'.'<br />'.
     '<t>code postal : '.$codePostal.' </t>'.'<br />'.
-    '<t>rue : '.$rue.' </t>';
+    '<t>rue : '.$rue.' </t>'.'<br />'.
+    '<t>numéro d\'appartement : ' .$numeroAppartement.'</t>'.'<br />'.
+    '<t>lieu dit : ' .$lieuDit.'</t>'.'<br />'.
+    '<t>superficie du bien : ' .$superficieBien.'</t>'.'<br />'.
+    '<t>superficie du terrain : ' .$superficieTerrain.'</t>'.'<br />'.
+    '<t>prix HFAI : ' .$prixHFAI.'</t>'.'<br />'.
+    '<t>numéro du batiment : ' .$numeroBatiment.'</t>'.'<br />'.
+    '<t>nombre de pièces : ' .$nbPiece.'</t>'.'<br />'.
+    '<t>nombre de chambres : ' .$nbChambre.'</t>'.'<br />'.
+    '<t>éco logement : ' .$ecoLogement.'</t>'.'<br />'.
+    '<t>émission GES : ' .$emissionGES.'</t>'.'<br />';
