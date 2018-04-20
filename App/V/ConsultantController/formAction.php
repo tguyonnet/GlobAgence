@@ -47,7 +47,11 @@ echo '<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
           <label for="codePostal">Code Postal :</label><br />
             <input type="text" name="codePostal" placeholder="Code Postal">
           </div>
-         <div class="form-group">
+          <div class="form-group">
+          <label for="password">Mot de passe :</label><br />
+            <input type="text" name="password" placeholder="Mot de passe">
+          </div>
+          <div class="form-group">
             <label for="valider">Valider :</label><br />
             <input type="submit" name="valider">
           </div>
