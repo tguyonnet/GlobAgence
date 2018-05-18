@@ -13,15 +13,25 @@ use Core\Object;
 
 class ConsultantModel extends Object
 {
-    protected static $_table = 'consultant';
-    
-    protected $id
+    protected static $_table = 'consultants';
+
+    protected $code_droit;
+    protected $id;
     protected $nom;
     protected $prenom;
-    Protected $zone;
-    protected $nombreDeBiensEnVente;
-    protected $nombreDeBiensVendus;
-    protected $chiffreAffaire;
+    protected $zone;
+    protected $nbreBiensAffectes;
+
+
+    /**
+     * @return mixed
+     */
+    public function getCodeDroit()
+    {
+        return $this->code_droit;
+    }
+
+
 
     /**
      * @return mixed
@@ -29,7 +39,10 @@ class ConsultantModel extends Object
     public function getId(){
         return $this->id;
     }
-    
+
+    /**
+     * @return mixed
+     */
     public function getNom()
     {
         return $this->nom;
@@ -54,9 +67,9 @@ class ConsultantModel extends Object
     /**
      * @return mixed
      */
-    public function getNombreDeBiensEnVente()
+    public function getNombreDeBiensAffectes()
     {
-        return $this->nombreDeBiensEnVente;
+        return $this->nbreBiensAffectes;
     }
 
     /**
