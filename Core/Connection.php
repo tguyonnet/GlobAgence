@@ -85,6 +85,7 @@ class Connection {
      * @return type
      */
     public function exec($query){
+
         try {
             return $this->_pdo->exec($query);
         } catch (Exception $exc) {

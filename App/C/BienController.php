@@ -51,6 +51,8 @@ class BienController extends \Core\Controller {
 
 
 
+
+
        /*
         self::$_view->ville = $params["ville"];
         self::$_view->codePostal = $params["codePostal"];

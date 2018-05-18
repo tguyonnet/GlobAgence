@@ -423,6 +423,7 @@ class Object {
                 unset($vars[$key]);
             }
         }
+
         /**
          * create and execute query
          */
@@ -433,6 +434,7 @@ class Object {
 
             $statement = self::getConnection()->prepare(self::$_cache['queries'][self::_getTable()]['insert']);
             $statement->execute(array_values($vars));
+
             $this->$id = self::getConnection()->lastInsertId();
         } else {
             if(!isset(self::$_cache['queries'][self::_getTable()]['update'])){
@@ -468,6 +470,7 @@ class Object {
                 unset($vars[$key]);
             }
         }
+
         return $this;
     }
 
