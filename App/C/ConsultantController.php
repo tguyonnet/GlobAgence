@@ -31,6 +31,7 @@ class ConsultantController extends \Core\Controller {
 
         // Recupére tous les biens de la BDD
         self::$_view->utilisateur = UtilisateurModel::getAll();
+        self::$_view->title = 'Consultant ajouté';
         $unNouveauConsultant = new UtilisateurModel();
         $unNouveauConsultant->setNom($params["nom"]);
         $unNouveauConsultant->setPrenom($params["prenom"]);
@@ -39,8 +40,8 @@ class ConsultantController extends \Core\Controller {
         $unNouveauConsultant->setTelephone($params["telephone"]);
         $unNouveauConsultant->setRue($params["rue"]);
         $unNouveauConsultant->setVille($params["ville"]);
-        $unNouveauConsultant->setCodePostal($params["CodePostal"]);
+        $unNouveauConsultant->setCodePostal($params["codePostal"]);
         $unNouveauConsultant->store();
     }
-
+//
 }
