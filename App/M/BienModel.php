@@ -32,7 +32,7 @@ class BienModel extends Object
     protected $ville;
     protected $emissionGES;
     protected $ecoLogement;
-
+//
     /**
      * @return string
      */

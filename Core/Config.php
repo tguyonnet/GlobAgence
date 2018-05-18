@@ -14,3 +14,4 @@ class Config{
     const APPLI_NAME    = 'GlobAgence';
     const APPLI_VERSION = 'v3';
 }
+//

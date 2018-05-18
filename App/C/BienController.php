@@ -48,7 +48,7 @@ class BienController extends \Core\Controller {
 
         $unNouveauBien->store();
 
-
+        //
 
 
 
