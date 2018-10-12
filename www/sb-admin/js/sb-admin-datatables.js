@@ -6,5 +6,4 @@ $(document).ready(function() {
         url: "datatables/media/French.json"
 
     }
-
 });
